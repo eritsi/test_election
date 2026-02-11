@@ -2,19 +2,139 @@
   {
     "prefecture": "東京都",
     "district": "1区",
-    "member": "山田太郎",
-    "party": "自民党"
+    "member": "山田美樹",
+    "party": "自由民主党"
   },
   {
     "prefecture": "東京都",
     "district": "2区",
-    "member": "佐藤花子",
+    "member": "辻清人",
+    "party": "自由民主党"
+  },
+  {
+    "prefecture": "東京都",
+    "district": "3区",
+    "member": "阿部祐美子",
     "party": "立憲民主党"
+  },
+  {
+    "prefecture": "東京都",
+    "district": "4区",
+    "member": "平将明",
+    "party": "自由民主党"
+  },
+  {
+    "prefecture": "東京都",
+    "district": "5区",
+    "member": "手塚仁雄",
+    "party": "立憲民主党"
+  },
+  {
+    "prefecture": "東京都",
+    "district": "6区",
+    "member": "落合貴之",
+    "party": "立憲民主党"
+  },
+  {
+    "prefecture": "東京都",
+    "district": "7区",
+    "member": "松尾明弘",
+    "party": "立憲民主党"
+  },
+  {
+    "prefecture": "東京都",
+    "district": "8区",
+    "member": "吉田晴美",
+    "party": "立憲民主党"
+  },
+  {
+    "prefecture": "東京都",
+    "district": "9区",
+    "member": "山岸一生",
+    "party": "立憲民主党"
+  },
+  {
+    "prefecture": "東京都",
+    "district": "10区",
+    "member": "鈴木隼人",
+    "party": "自由民主党"
   },
   {
     "prefecture": "大阪府",
     "district": "1区",
-    "member": "田中一郎",
-    "party": "公明党"
+    "member": "井上英孝",
+    "party": "日本維新の会"
+  },
+  {
+    "prefecture": "大阪府",
+    "district": "2区",
+    "member": "守島臣",
+    "party": "日本維新の会"
+  },
+  {
+    "prefecture": "大阪府",
+    "district": "3区",
+    "member": "東徹",
+    "party": "日本維新の会"
+  },
+  {
+    "prefecture": "大阪府",
+    "district": "4区",
+    "member": "美延映夫",
+    "party": "日本維新の会"
+  },
+  {
+    "prefecture": "大阪府",
+    "district": "5区",
+    "member": "梅村聡",
+    "party": "日本維新の会"
+  },
+  {
+    "prefecture": "大阪府",
+    "district": "6区",
+    "member": "西田譲",
+    "party": "日本維新の会"
+  },
+  {
+    "prefecture": "大阪府",
+    "district": "7区",
+    "member": "奥下素久",
+    "party": "日本維新の会"
+  },
+  {
+    "prefecture": "大阪府",
+    "district": "8区",
+    "member": "漆間譲司",
+    "party": "日本維新の会"
+  },
+  {
+    "prefecture": "大阪府",
+    "district": "9区",
+    "member": "萩原佳",
+    "party": "日本維新の会"
+  },
+  {
+    "prefecture": "大阪府",
+    "district": "10区",
+    "member": "池下卓",
+    "party": "日本維新の会"
+  },
+  {
+    "prefecture": "愛知県",
+    "district": "1区",
+    "member": "河村たかし",
+    "party": "日本保守党"
+  },
+  {
+    "prefecture": "神奈川県",
+    "district": "11区",
+    "member": "小泉進次郎",
+    "party": "自由民主党"
+  },
+  {
+    "prefecture": "福岡県",
+    "district": "1区",
+    "member": "井上貴博",
+    "party": "自由民主党"
   }
 ]
