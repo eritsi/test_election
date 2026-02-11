@@ -20,8 +20,8 @@ function deformCoord(coord) {
   const centerLat = 37;
 
   return [
-    centerLon + (coord[0] - centerLon) * 0.65, // 東西圧縮
-    centerLat + (coord[1] - centerLat) * 0.85  // 南北圧縮
+    centerLon + (coord[0] - centerLon) * 0.65,
+    centerLat + (coord[1] - centerLat) * 0.85
   ];
 }
 
@@ -37,25 +37,34 @@ function deformGeometry(geometry) {
     return coords.map(recurse);
   }
 
-  geometry.coordinates = recurse(geometry.coordinates);
-  return geometry;
+  return {
+    ...geometry,
+    coordinates: recurse(geometry.coordinates)
+  };
 }
 
 // --------------------
-// 読み込み
+// GeoJSON読み込み
 // --------------------
-d3.json("prefectures.geojson").then(geojson => {
+d3.json("prefectures.geojson")
+  .then(function(geojson) {
 
-  // 🔥 座標を直接変形
-  geojson.features.forEach(feature => {
-    feature.geometry = deformGeometry(feature.geometry);
+    // 座標変形
+    geojson.features.forEach(function(feature) {
+      feature.geometry = deformGeometry(feature.geometry);
+    });
+
+    // 描画
+    svg.selectAll("path")
+      .data(geojson.features)
+      .enter()
+      .append("path")
+      .attr("d", path)
+      .attr("fill", "#f5f5f5")
+      .attr("stroke", "#333")
+      .attr("stroke-width", 1.5);
+
+  })
+  .catch(function(error) {
+    console.error("GeoJSON読み込みエラー:", error);
   });
-
-  svg.selectAll("path")
-    .data(geojson.features)
-    .enter()
-    .append("path")
-    .attr("d", path)
-    .attr("fill", "#f5f5f5")
-    .attr("stroke", "#333")
-    .attr("stroke-width", 1.5);
