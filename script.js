@@ -10,41 +10,52 @@ const projection = d3.geoMercator()
   .scale(width * 1.1)
   .translate([width / 2, height / 2]);
 
-// 🔥 疑似デフォルメ変換
-function deform([lon, lat]) {
+const path = d3.geoPath().projection(projection);
+
+// --------------------
+// 疑似デフォルメ関数
+// --------------------
+function deformCoord(coord) {
   const centerLon = 137;
   const centerLat = 37;
 
   return [
-    centerLon + (lon - centerLon) * 0.65, // 東西圧縮
-    centerLat + (lat - centerLat) * 0.85  // 南北圧縮
+    centerLon + (coord[0] - centerLon) * 0.65, // 東西圧縮
+    centerLat + (coord[1] - centerLat) * 0.85  // 南北圧縮
   ];
 }
 
-const path = d3.geoPath().projection({
-  stream: function(stream) {
-    const projectionStream = projection.stream({
-      point(lon, lat) {
-        const [newLon, newLat] = deform([lon, lat]);
-        stream.point(...projection([newLon, newLat]));
-      },
-      lineStart: () => stream.lineStart(),
-      lineEnd: () => stream.lineEnd(),
-      polygonStart: () => stream.polygonStart(),
-      polygonEnd: () => stream.polygonEnd()
-    });
-    return projectionStream;
-  }
-});
+// --------------------
+// GeoJSONの座標を再帰変換
+// --------------------
+function deformGeometry(geometry) {
 
+  function recurse(coords) {
+    if (typeof coords[0] === "number") {
+      return deformCoord(coords);
+    }
+    return coords.map(recurse);
+  }
+
+  geometry.coordinates = recurse(geometry.coordinates);
+  return geometry;
+}
+
+// --------------------
+// 読み込み
+// --------------------
 d3.json("prefectures.geojson").then(geojson => {
+
+  // 🔥 座標を直接変形
+  geojson.features.forEach(feature => {
+    feature.geometry = deformGeometry(feature.geometry);
+  });
 
   svg.selectAll("path")
     .data(geojson.features)
     .enter()
     .append("path")
     .attr("d", path)
-    .attr("fill", "#f0f0f0")
+    .attr("fill", "#f5f5f5")
     .attr("stroke", "#333")
     .attr("stroke-width", 1.5);
-});
