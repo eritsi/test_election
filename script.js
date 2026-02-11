@@ -16,7 +16,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 // 3. 県GeoJSON読み込み（例：Japan prefectures GeoJSON）
-fetch('japan_prefectures.geojson')
+fetch('prefectures.geojson')
   .then(res => res.json())
   .then(geojson => {
     L.geoJSON(geojson, {
