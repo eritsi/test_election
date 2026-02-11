@@ -8,8 +8,32 @@ h1 {
   margin: 20px 0;
 }
 
+#filters {
+  margin-bottom: 10px;
+}
+
 #map {
   width: 95%;
   height: 80vh;
   margin: auto;
+}
+
+.legend {
+  background: white;
+  padding: 10px;
+  line-height: 1.6;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.3);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.legend-color {
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
 }
