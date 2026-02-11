@@ -1,140 +1,200 @@
 [
   {
-    "prefecture": "東京都",
+    "prefecture": "北海道",
     "district": "1区",
-    "member": "山田美樹",
-    "party": "自由民主党"
+    "member": "道下大樹",
+    "party": "立憲民主党"
   },
   {
-    "prefecture": "東京都",
+    "prefecture": "北海道",
     "district": "2区",
-    "member": "辻清人",
-    "party": "自由民主党"
+    "member": "松木謙公",
+    "party": "立憲民主党"
   },
   {
-    "prefecture": "東京都",
+    "prefecture": "北海道",
     "district": "3区",
-    "member": "阿部祐美子",
-    "party": "立憲民主党"
-  },
-  {
-    "prefecture": "東京都",
-    "district": "4区",
-    "member": "平将明",
+    "member": "高木宏壽",
     "party": "自由民主党"
   },
   {
-    "prefecture": "東京都",
-    "district": "5区",
-    "member": "手塚仁雄",
-    "party": "立憲民主党"
-  },
-  {
-    "prefecture": "東京都",
-    "district": "6区",
-    "member": "落合貴之",
-    "party": "立憲民主党"
-  },
-  {
-    "prefecture": "東京都",
-    "district": "7区",
-    "member": "松尾明弘",
-    "party": "立憲民主党"
-  },
-  {
-    "prefecture": "東京都",
-    "district": "8区",
-    "member": "吉田晴美",
-    "party": "立憲民主党"
-  },
-  {
-    "prefecture": "東京都",
-    "district": "9区",
-    "member": "山岸一生",
-    "party": "立憲民主党"
-  },
-  {
-    "prefecture": "東京都",
-    "district": "10区",
-    "member": "鈴木隼人",
+    "prefecture": "北海道",
+    "district": "4区",
+    "member": "中村裕之",
     "party": "自由民主党"
   },
   {
-    "prefecture": "大阪府",
-    "district": "1区",
-    "member": "井上英孝",
-    "party": "日本維新の会"
-  },
-  {
-    "prefecture": "大阪府",
-    "district": "2区",
-    "member": "守島臣",
-    "party": "日本維新の会"
-  },
-  {
-    "prefecture": "大阪府",
-    "district": "3区",
-    "member": "東徹",
-    "party": "日本維新の会"
-  },
-  {
-    "prefecture": "大阪府",
-    "district": "4区",
-    "member": "美延映夫",
-    "party": "日本維新の会"
-  },
-  {
-    "prefecture": "大阪府",
+    "prefecture": "北海道",
     "district": "5区",
-    "member": "梅村聡",
-    "party": "日本維新の会"
+    "member": "池田真紀",
+    "party": "立憲民主党"
   },
   {
-    "prefecture": "大阪府",
+    "prefecture": "北海道",
     "district": "6区",
-    "member": "西田譲",
-    "party": "日本維新の会"
+    "member": "東国幹",
+    "party": "自由民主党"
   },
   {
-    "prefecture": "大阪府",
+    "prefecture": "北海道",
     "district": "7区",
-    "member": "奥下素久",
-    "party": "日本維新の会"
+    "member": "鈴木貴子",
+    "party": "自由民主党"
   },
   {
-    "prefecture": "大阪府",
+    "prefecture": "北海道",
     "district": "8区",
-    "member": "漆間譲司",
-    "party": "日本維新の会"
+    "member": "逢坂誠二",
+    "party": "立憲民主党"
   },
   {
-    "prefecture": "大阪府",
+    "prefecture": "北海道",
     "district": "9区",
-    "member": "萩原佳",
-    "party": "日本維新の会"
+    "member": "山岡達丸",
+    "party": "立憲民主党"
   },
   {
-    "prefecture": "大阪府",
+    "prefecture": "北海道",
     "district": "10区",
-    "member": "池下卓",
-    "party": "日本維新の会"
+    "member": "神谷裕",
+    "party": "立憲民主党"
   },
   {
-    "prefecture": "愛知県",
-    "district": "1区",
-    "member": "河村たかし",
-    "party": "日本保守党"
-  },
-  {
-    "prefecture": "神奈川県",
+    "prefecture": "北海道",
     "district": "11区",
-    "member": "小泉進次郎",
+    "member": "石川香織",
+    "party": "立憲民主党"
+  },
+  {
+    "prefecture": "北海道",
+    "district": "12区",
+    "member": "武部新",
     "party": "自由民主党"
   },
   {
-    "prefecture": "福岡県",
+    "prefecture": "青森県",
     "district": "1区",
-    "member": "井上貴博",
+    "member": "津島淳",
+    "party": "自由民主党"
+  },
+  {
+    "prefecture": "青森県",
+    "district": "2区",
+    "member": "神田潤一",
+    "party": "自由民主党"
+  },
+  {
+    "prefecture": "青森県",
+    "district": "3区",
+    "member": "木村次郎",
+    "party": "自由民主党"
+  },
+  {
+    "prefecture": "岩手県",
+    "district": "1区",
+    "member": "階猛",
+    "party": "立憲民主党"
+  },
+  {
+    "prefecture": "岩手県",
+    "district": "2区",
+    "member": "鈴木俊一",
+    "party": "自由民主党"
+  },
+  {
+    "prefecture": "岩手県",
+    "district": "3区",
+    "member": "小沢一郎",
+    "party": "立憲民主党"
+  },
+  {
+    "prefecture": "宮城県",
+    "district": "1区",
+    "member": "岡本章子",
+    "party": "立憲民主党"
+  },
+  {
+    "prefecture": "宮城県",
+    "district": "2区",
+    "member": "鎌田さゆり",
+    "party": "立憲民主党"
+  },
+  {
+    "prefecture": "宮城県",
+    "district": "3区",
+    "member": "西村明宏",
+    "party": "自由民主党"
+  },
+  {
+    "prefecture": "宮城県",
+    "district": "4区",
+    "member": "伊藤信太郎",
+    "party": "自由民主党"
+  },
+  {
+    "prefecture": "宮城県",
+    "district": "5区",
+    "member": "小野寺五典",
+    "party": "自由民主党"
+  },
+  {
+    "prefecture": "秋田県",
+    "district": "1区",
+    "member": "冨樫博之",
+    "party": "自由民主党"
+  },
+  {
+    "prefecture": "秋田県",
+    "district": "2区",
+    "member": "緑川貴士",
+    "party": "立憲民主党"
+  },
+  {
+    "prefecture": "秋田県",
+    "district": "3区",
+    "member": "御法川信英",
+    "party": "自由民主党"
+  },
+  {
+    "prefecture": "山形県",
+    "district": "1区",
+    "member": "遠藤利明",
+    "party": "自由民主党"
+  },
+  {
+    "prefecture": "山形県",
+    "district": "2区",
+    "member": "鈴木憲和",
+    "party": "自由民主党"
+  },
+  {
+    "prefecture": "山形県",
+    "district": "3区",
+    "member": "加藤鮎子",
+    "party": "自由民主党"
+  },
+  {
+    "prefecture": "福島県",
+    "district": "1区",
+    "member": "金子恵美",
+    "party": "立憲民主党"
+  },
+  {
+    "prefecture": "福島県",
+    "district": "2区",
+    "member": "玄葉光一郎",
+    "party": "立憲民主党"
+  },
+  {
+    "prefecture": "福島県",
+    "district": "3区",
+    "member": "小熊慎司",
+    "party": "立憲民主党"
+  },
+  {
+    "prefecture": "福島県",
+    "district": "4区",
+    "member": "斎藤洋明",
     "party": "自由民主党"
   }
 ]
