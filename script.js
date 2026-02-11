@@ -17,8 +17,7 @@ const height = container.clientHeight;
 
 const svg = d3.select("#map")
   .append("svg")
-  .attr("viewBox", `0 0 ${width} ${height}`)
-  .attr("preserveAspectRatio", "xMidYMid meet");
+  .attr("viewBox", `0 0 ${width} ${height}`);
 
 const projection = d3.geoMercator()
   .center([137, 37])
@@ -29,7 +28,7 @@ const path = d3.geoPath().projection(projection);
 
 const cartogram = d3.cartogram()
   .projection(projection)
-  .value(d => 1); // 全県均等化
+  .value(d => 1);
 
 // Tooltip
 const tooltip = d3.select("body")
@@ -38,18 +37,21 @@ const tooltip = d3.select("body")
   .style("display", "none");
 
 // --------------------
-// GeoJSON読み込み
+// TopoJSON読み込み（←ここが重要）
 // --------------------
-d3.json("prefectures.geojson").then(geojson => {
+d3.json("prefectures.topojson").then(topology => {
 
-  features = cartogram(geojson).features;
+  // オブジェクト名を取得（通常は "prefectures"）
+  const objectName = Object.keys(topology.objects)[0];
+
+  features = cartogram(topology,
+    topology.objects[objectName].geometries
+  ).features;
 
   drawMap(features);
   loadMembers();
 });
 
-// --------------------
-// 地図描画
 // --------------------
 function drawMap(features) {
 
@@ -64,8 +66,6 @@ function drawMap(features) {
 }
 
 // --------------------
-// 議員読み込み
-// --------------------
 function loadMembers() {
   d3.json("data.json").then(data => {
     allMembers = data;
@@ -75,8 +75,6 @@ function loadMembers() {
   });
 }
 
-// --------------------
-// 円形ドット配置
 // --------------------
 function plotMembers() {
 
@@ -135,8 +133,6 @@ function plotMembers() {
 }
 
 // --------------------
-// フィルター
-// --------------------
 function createFilters() {
   const filterDiv = document.getElementById('filters');
   const parties = [...new Set(allMembers.map(m => m.party))];
@@ -158,10 +154,7 @@ function createFilters() {
 }
 
 // --------------------
-// 凡例
-// --------------------
 function createLegend() {
-
   const legend = document.createElement("div");
   legend.className = "legend";
 
