@@ -1,4 +1,6 @@
-// 1. 政党ごとの色設定
+// --------------------
+// 政党カラー
+// --------------------
 const partyColors = {
   "自民党": "#0070c0",
   "立憲民主党": "#ff0000",
@@ -9,43 +11,85 @@ const partyColors = {
   "無所属": "#999999"
 };
 
-// 2. マップ初期化
-const map = L.map('map').setView([37.8, 138], 5);
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '© OpenStreetMap contributors'
-}).addTo(map);
+// --------------------
+// マップ初期化（タイルなし）
+// --------------------
+const map = L.map('map', {
+  zoomControl: true,
+  attributionControl: false
+});
 
-// 3. 県GeoJSON読み込み（例：Japan prefectures GeoJSON）
+// --------------------
+// 県GeoJSON読み込み
+// --------------------
+let prefectureLayer;
+
 fetch('prefectures.geojson')
   .then(res => res.json())
   .then(geojson => {
-    L.geoJSON(geojson, {
-      style: { color: '#555', weight: 1, fillOpacity: 0.7 },
-      onEachFeature: (feature, layer) => {
-        layer.on('click', () => showMembers(feature.properties.name));
+
+    prefectureLayer = L.geoJSON(geojson, {
+      style: {
+        color: "#333",
+        weight: 1,
+        fillColor: "#f0f0f0",
+        fillOpacity: 0.8
       }
     }).addTo(map);
+
+    map.fitBounds(prefectureLayer.getBounds());
+
+    // GeoJSON読み込み後に議員描画
+    loadMembers();
   });
 
-// 4. 議員データ読み込み
-let membersData = [];
-fetch('data.json')
-  .then(res => res.json())
-  .then(data => { membersData = data; });
+// --------------------
+// 議員データ読み込み
+// --------------------
+function loadMembers() {
+  fetch('data.json')
+    .then(res => res.json())
+    .then(data => {
+      plotMembers(data);
+    });
+}
 
-// 5. 県クリック時に議員リスト表示
-function showMembers(prefName) {
-  const infoTitle = document.getElementById('info-title');
-  const memberList = document.getElementById('member-list');
+// --------------------
+// ドット描画処理
+// --------------------
+function plotMembers(members) {
 
-  infoTitle.textContent = prefName + 'の議員一覧';
-  memberList.innerHTML = '';
+  members.forEach(member => {
 
-  const members = membersData.filter(m => m.prefecture === prefName);
-  members.forEach(m => {
-    const li = document.createElement('li');
-    li.textContent = `${m.district}: ${m.member} (${m.party})`;
-    li.style.color = partyColors[m.party] || '#000';
-    memberList.appendChild(li);
+    // 県ポリゴン取得
+    prefectureLayer.eachLayer(layer => {
+
+      if (layer.feature.properties.name === member.prefecture) {
+
+        // 県の中心座標を取得
+        const center = layer.getBounds().getCenter();
+
+        // 少しランダムにずらして重なり防止
+        const latOffset = (Math.random() - 0.5) * 0.3;
+        const lngOffset = (Math.random() - 0.5) * 0.3;
+
+        const marker = L.circleMarker(
+          [center.lat + latOffset, center.lng + lngOffset],
+          {
+            radius: 6,
+            fillColor: partyColors[member.party] || "#000",
+            color: "#000",
+            weight: 1,
+            fillOpacity: 0.9
+          }
+        ).addTo(map);
+
+        // ホバーでポップアップ
+        marker.bindTooltip(
+          `${member.member}<br>${member.party}<br>${member.district}`,
+          { direction: "top" }
+        );
+      }
+    });
   });
 }
