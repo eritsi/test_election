@@ -1,200 +1,197 @@
 [
   {
-    "prefecture": "北海道",
-    "district": "1区",
-    "member": "道下大樹",
-    "party": "立憲民主党"
+    "prefecture": "東京都",
+    "party": "都民ファーストの会",
+    "count": 32,
+    "positions": ["議長:増子博樹氏"]
   },
   {
-    "prefecture": "北海道",
-    "district": "2区",
-    "member": "松木謙公",
-    "party": "立憲民主党"
+    "prefecture": "東京都",
+    "party": "自民党",
+    "count": 22,
+    "positions": ["副議長:菅野弘一氏"]
   },
   {
-    "prefecture": "北海道",
-    "district": "3区",
-    "member": "高木宏壽",
-    "party": "自由民主党"
+    "prefecture": "東京都",
+    "party": "立憲民主党",
+    "count": 20,
+    "positions": [],
+    "description": "東京都議会立憲民主党・ミライ会議・生活者ネットワーク・無所属の会"
   },
   {
-    "prefecture": "北海道",
-    "district": "4区",
-    "member": "中村裕之",
-    "party": "自由民主党"
+    "prefecture": "東京都",
+    "party": "公明党",
+    "count": 19,
+    "positions": []
   },
   {
-    "prefecture": "北海道",
-    "district": "5区",
-    "member": "池田真紀",
-    "party": "立憲民主党"
+    "prefecture": "東京都",
+    "party": "日本共産党",
+    "count": 14,
+    "positions": []
   },
   {
-    "prefecture": "北海道",
-    "district": "6区",
-    "member": "東国幹",
-    "party": "自由民主党"
+    "prefecture": "東京都",
+    "party": "国民民主党",
+    "count": 9,
+    "positions": []
   },
   {
-    "prefecture": "北海道",
-    "district": "7区",
-    "member": "鈴木貴子",
-    "party": "自由民主党"
+    "prefecture": "東京都",
+    "party": "参政党",
+    "count": 3,
+    "positions": []
   },
   {
-    "prefecture": "北海道",
-    "district": "8区",
-    "member": "逢坂誠二",
-    "party": "立憲民主党"
+    "prefecture": "東京都",
+    "party": "自由を守る会",
+    "count": 2,
+    "positions": []
   },
   {
-    "prefecture": "北海道",
-    "district": "9区",
-    "member": "山岡達丸",
-    "party": "立憲民主党"
+    "prefecture": "東京都",
+    "party": "1人会派",
+    "count": 4,
+    "positions": [],
+    "description": "やちよの会/東京・品川からやさしい未来を/新時代の八王子/グリーンな東京"
   },
   {
-    "prefecture": "北海道",
-    "district": "10区",
-    "member": "神谷裕",
-    "party": "立憲民主党"
+    "prefecture": "東京都",
+    "party": "空席",
+    "count": 2,
+    "positions": [],
+    "description": "議員定数127人/空席2/2026.1.27更新情報"
   },
   {
-    "prefecture": "北海道",
-    "district": "11区",
-    "member": "石川香織",
-    "party": "立憲民主党"
+    "prefecture": "大阪府",
+    "party": "自民党",
+    "count": 4,
+    "positions": ["議員", "委員"]
   },
   {
-    "prefecture": "北海道",
-    "district": "12区",
-    "member": "武部新",
-    "party": "自由民主党"
+    "prefecture": "大阪府",
+    "party": "維新",
+    "count": 6,
+    "positions": ["議員"]
   },
   {
-    "prefecture": "青森県",
-    "district": "1区",
-    "member": "津島淳",
-    "party": "自由民主党"
+    "prefecture": "大阪府",
+    "party": "公明党",
+    "count": 2,
+    "positions": ["議員"]
   },
   {
-    "prefecture": "青森県",
-    "district": "2区",
-    "member": "神田潤一",
-    "party": "自由民主党"
+    "prefecture": "神奈川県",
+    "party": "自民党",
+    "description": "自由民主党神奈川県議会議員団",
+    "count": 45,
+    "positions": ["議長"]
   },
   {
-    "prefecture": "青森県",
-    "district": "3区",
-    "member": "木村次郎",
-    "party": "自由民主党"
+    "prefecture": "神奈川県",
+    "party": "公明党",
+    "count": 8,
+    "positions": ["副議長"],
+    "description": "神奈川県議会議員団"
   },
   {
-    "prefecture": "岩手県",
-    "district": "1区",
-    "member": "階猛",
-    "party": "立憲民主党"
+    "prefecture": "神奈川県",
+    "party": "日本維新の会",
+    "count": 5,
+    "positions": [],
+    "description": "神奈川県議会議員団"
   },
   {
-    "prefecture": "岩手県",
-    "district": "2区",
-    "member": "鈴木俊一",
-    "party": "自由民主党"
+    "prefecture": "神奈川県",
+    "party": "立憲民主党",
+    "count": 4,
+    "positions": [],
+    "description": "県政会・立憲民主神奈川ネット神奈川県議会議員団"
   },
   {
-    "prefecture": "岩手県",
-    "district": "3区",
-    "member": "小沢一郎",
-    "party": "立憲民主党"
+    "prefecture": "神奈川県",
+    "party": "日本共産党",
+    "count": 3,
+    "positions": [],
+    "description": "日本共産党神奈川県議会議員団"
   },
   {
-    "prefecture": "宮城県",
-    "district": "1区",
-    "member": "岡本章子",
-    "party": "立憲民主党"
+    "prefecture": "神奈川県",
+    "party": "1人会派",
+    "count": 4,
+    "positions": [],
+    "description": "わが町/神奈川を変える港南の会/創和会/清進の会"
   },
   {
-    "prefecture": "宮城県",
-    "district": "2区",
-    "member": "鎌田さゆり",
-    "party": "立憲民主党"
+    "prefecture": "神奈川県",
+    "party": "かながわ未来",
+    "count": 10,
+    "positions": [],
+    "description": "かながわ未来神奈川県議会議員団"
   },
   {
-    "prefecture": "宮城県",
-    "district": "3区",
-    "member": "西村明宏",
-    "party": "自由民主党"
+    "prefecture": "神奈川県",
+    "party": "立憲民主党",
+    "count": 20,
+    "positions": [],
+    "description": "かながわクラブ神奈川県議会議員団"
   },
   {
-    "prefecture": "宮城県",
-    "district": "4区",
-    "member": "伊藤信太郎",
-    "party": "自由民主党"
+    "prefecture": "神奈川県",
+    "party": "空席",
+    "count": 6,
+    "positions": [],
+    "description": "議員定数105人/空席6/2026.1.21更新情報"
   },
   {
-    "prefecture": "宮城県",
-    "district": "5区",
-    "member": "小野寺五典",
-    "party": "自由民主党"
+    "prefecture": "千葉県",
+    "party": "自民党",
+    "count": 49,
+    "positions": ["議長:武田正光氏", "副議長:三沢智s"]
   },
   {
-    "prefecture": "秋田県",
-    "district": "1区",
-    "member": "冨樫博之",
-    "party": "自由民主党"
+    "prefecture": "千葉県",
+    "party": "立憲民主党",
+    "count": 13,
+    "positions": []
   },
   {
-    "prefecture": "秋田県",
-    "district": "2区",
-    "member": "緑川貴士",
-    "party": "立憲民主党"
+    "prefecture": "千葉県",
+    "party": "公明党",
+    "count": 8,
+    "positions": []
   },
   {
-    "prefecture": "秋田県",
-    "district": "3区",
-    "member": "御法川信英",
-    "party": "自由民主党"
+    "prefecture": "千葉県",
+    "party": "千政団",
+    "count": 5,
+    "positions": [],
+    "description": "千葉新政策議員団"
   },
   {
-    "prefecture": "山形県",
-    "district": "1区",
-    "member": "遠藤利明",
-    "party": "自由民主党"
+    "prefecture": "千葉県",
+    "party": "共産党",
+    "count": 4,
+    "positions": []
   },
   {
-    "prefecture": "山形県",
-    "district": "2区",
-    "member": "鈴木憲和",
-    "party": "自由民主党"
+    "prefecture": "千葉県",
+    "party": "1人会派",
+    "count": 8,
+    "positions": [],
+    "description": "平和の党/国民民主党千葉県議会議員会/千葉県民の声/リベラル民主/市民力/有志の会/野田民主の会/未来ちば"
   },
   {
-    "prefecture": "山形県",
-    "district": "3区",
-    "member": "加藤鮎子",
-    "party": "自由民主党"
+    "prefecture": "千葉県",
+    "party": "無所属",
+    "count": 3,
+    "positions": []
   },
   {
-    "prefecture": "福島県",
-    "district": "1区",
-    "member": "金子恵美",
-    "party": "立憲民主党"
-  },
-  {
-    "prefecture": "福島県",
-    "district": "2区",
-    "member": "玄葉光一郎",
-    "party": "立憲民主党"
-  },
-  {
-    "prefecture": "福島県",
-    "district": "3区",
-    "member": "小熊慎司",
-    "party": "立憲民主党"
-  },
-  {
-    "prefecture": "福島県",
-    "district": "4区",
-    "member": "斎藤洋明",
-    "party": "自由民主党"
+    "prefecture": "千葉県",
+    "party": "空席",
+    "count": 5,
+    "positions": [],
+    "description": "議員定数95人/空席5/2025.12.25更新情報"
   }
 ]

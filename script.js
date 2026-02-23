@@ -11,11 +11,20 @@ const svg = d3.select("#map")
 // =====================
 const partyColors = {
   "自由民主党": "#c53a3a",
+  "自民党": "#c53a3a",
   "立憲民主党": "#4f9ad6",
   "維新": "#77b255",
+  "日本維新の会": "#77b255",
   "公明党": "#f1b400",
   "共産党": "#9b7ac6",
-  "無所属": "#666"
+  "日本共産党": "#9b7ac6",
+  "国民民主党": "#e8a333",
+  "参政党": "#8b4513",
+  "かながわ未来": "#66bb6a",
+  "1人会派": "#999",
+  "自由を守る会": "#7c7c7c",
+  "空席": "#ddd",
+  "無所属": "#999"
 };
 
 let activeParty = null; // legendクリック状態
@@ -58,6 +67,16 @@ const tile = {
   "沖縄県":[2,14]
 };
 
+// =====================
+// セルサイズ
+// =====================
+const cellW = 110;
+const cellH = 90;
+
+// 半円形pie chartの最大半径（cellHから逆算）
+// cellH=90, 余白を考慮して max_radius ≒ 35px
+const maxRadius = 35;
+
 
 // =====================
 // ツールチップ
@@ -71,7 +90,8 @@ const tooltip = d3.select("body")
   .style("border-radius", "6px")
   .style("font-size", "13px")
   .style("pointer-events", "none")
-  .style("opacity", 0);
+  .style("opacity", 0)
+  .style("z-index", 1000);
 
 // =====================
 // legend描画
@@ -79,8 +99,12 @@ const tooltip = d3.select("body")
 const legend = svg.append("g")
   .attr("transform", "translate(50,50)");
 
-Object.entries(partyColors).forEach(([party, color], i) => {
+const uniqueParties = Array.from(new Set([
+  "自民党", "立憲民主党", "公明党", "日本共産党", "維新",
+  "国民民主党", "参政党", "かながわ未来", "1人会派", "空席"
+]));
 
+uniqueParties.forEach((party, i) => {
   const g = legend.append("g")
     .attr("transform", `translate(${(i%3)*160}, ${Math.floor(i/3)*30})`)
     .style("cursor", "pointer")
@@ -88,7 +112,7 @@ Object.entries(partyColors).forEach(([party, color], i) => {
 
   g.append("circle")
     .attr("r", 8)
-    .attr("fill", color);
+    .attr("fill", partyColors[party] || "#999");
 
   g.append("text")
     .attr("x", 15)
@@ -102,10 +126,10 @@ function toggleParty(party) {
 }
 
 function updateHighlight() {
-  svg.selectAll(".dot")
+  svg.selectAll(".party-slice")
     .attr("opacity", d => {
       if (!activeParty) return 1;
-      return d.party === activeParty ? 1 : 0.15;
+      return d.data.party === activeParty ? 1 : 0.15;
     });
 }
 
@@ -114,71 +138,101 @@ function updateHighlight() {
 // =====================
 d3.json("data.json").then(data => {
 
+  // 各県ごとにデータをグループ化
   const grouped = d3.group(data, d => d.prefecture);
 
-  const cellW = 110;
-  const cellH = 90;
-  const cols = 4;
+  // 最大人数を算出（スケール計算用）
+  let maxCount = 0;
+  grouped.forEach(members => {
+    const total = members.reduce((sum, m) => sum + m.count, 0);
+    maxCount = Math.max(maxCount, total);
+  });
 
-  // 🔥 全県ループ（データ無でも描画）
+  // スケール関数（人数 → 半径、平方根で計算）
+  const radiusScale = d3.scaleSqrt()
+    .domain([0, maxCount])
+    .range([5, maxRadius]);
+
+  // 全県ループ（データ無でも描画）
   Object.keys(tile).forEach(pref => {
 
     const members = grouped.get(pref) || [];
+    const totalCount = members.reduce((sum, m) => sum + m.count, 0);
+    const radius = radiusScale(totalCount);
 
     const pos = tile[pref];
-    const x = pos[0] * cellW;
-    const y = pos[1] * cellH;
+    const x = pos[0] * cellW + cellW / 2;
+    const y = pos[1] * cellH + cellH / 2 + 15;
 
-    const rows = Math.ceil(members.length / cols);
-    const boxHeight = 40 + Math.max(rows, 1) * 20;
-
-    // カード
+    // 背景カード
     const card = svg.append("rect")
-      .attr("x", x)
-      .attr("y", y)
-      .attr("width", 100)
-      .attr("height", boxHeight)
-      .attr("rx", 8)
-      .attr("fill", "#f4f4f4")
+      .attr("x", pos[0] * cellW)
+      .attr("y", pos[1] * cellH)
+      .attr("width", cellW)
+      .attr("height", cellH)
+      .attr("rx", 4)
+      .attr("fill", "#f9f7f2")
       .attr("stroke", "#b9a88f")
-      .on("mouseover", (event) => {
+      .attr("stroke-width", 1);
+
+    // タイトル
+    svg.append("text")
+      .attr("x", pos[0] * cellW + 8)
+      .attr("y", pos[1] * cellH + 14)
+      .attr("font-size", 11)
+      .attr("font-weight", "bold")
+      .attr("fill", "#333")
+      .text(`${pref.replace(/都|府|県/,"")}`);
+
+    // 人数表示
+    svg.append("text")
+      .attr("x", pos[0] * cellW + 8)
+      .attr("y", pos[1] * cellH + 25)
+      .attr("font-size", 9)
+      .attr("fill", "#666")
+      .text(`${totalCount}人`);
+
+    // pie chartがない場合
+    if (members.length === 0) {
+      return;
+    }
+
+    // 半円形pie chart
+    const pie = d3.pie()
+      .value(d => d.count)
+      .startAngle(-Math.PI / 2)
+      .endAngle(Math.PI / 2);
+
+    const arc = d3.arc()
+      .innerRadius(0)
+      .outerRadius(radius)
+      .startAngle(d => d.startAngle)
+      .endAngle(d => d.endAngle);
+
+    const pieData = pie(members);
+
+    const group = svg.append("g")
+      .attr("transform", `translate(${x}, ${y})`);
+
+    // 各党派のスライス
+    group.selectAll(".party-slice")
+      .data(pieData)
+      .enter()
+      .append("path")
+      .attr("class", "party-slice")
+      .attr("d", arc)
+      .attr("fill", d => partyColors[d.data.party] || "#ccc")
+      .attr("stroke", "#fff")
+      .attr("stroke-width", 1)
+      .attr("opacity", 1)
+      .on("mouseover", (event, d) => {
         tooltip
           .style("opacity", 1)
-          .html(`<strong>${pref}</strong><br/>議席数: ${members.length}`)
+          .html(`<strong>${d.data.positions[0]}</strong><br/>${d.data.party}<br/>${d.data.count}人`)
           .style("left", (event.pageX + 10) + "px")
           .style("top", (event.pageY - 20) + "px");
       })
       .on("mouseout", () => tooltip.style("opacity", 0));
-
-    // タイトル
-    svg.append("text")
-      .attr("x", x + 8)
-      .attr("y", y + 16)
-      .attr("font-size", 12)
-      .text(`${pref.replace(/都|府|県/,"")} (${members.length})`);
-
-    // ドット
-    members.forEach((m, i) => {
-
-      const col = i % cols;
-      const row = Math.floor(i / cols);
-
-      svg.append("circle")
-        .datum(m)
-        .attr("class", "dot")
-        .attr("cx", x + 15 + col * 20)
-        .attr("cy", y + 30 + row * 20)
-        .attr("r", 6)
-        .attr("fill", partyColors[m.party] || "#999")
-        .on("mouseover", (event, d) => {
-          tooltip
-            .style("opacity", 1)
-            .html(`${d.member}<br/>${d.party}`)
-            .style("left", (event.pageX + 10) + "px")
-            .style("top", (event.pageY - 20) + "px");
-        })
-        .on("mouseout", () => tooltip.style("opacity", 0));
-    });
 
   });
 
