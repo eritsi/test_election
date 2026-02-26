@@ -1,4 +1,284 @@
 [
+    {
+    "prefecture": "北海道",
+    "party": "自民党・道民会議",
+    "count": 53,
+    "positions": ["議長: 伊藤条一氏"],
+    "description": "令和7年10月15日現在。議員定数100人"
+  },
+  {
+    "prefecture": "北海道",
+    "party": "民主・道民連合",
+    "count": 28,
+    "positions": ["副議長: 梶谷大志氏"],
+    "description": "第2会派。慣例に基づき副議長を選出"
+  },
+  {
+    "prefecture": "北海道",
+    "party": "北海道結志会",
+    "count": 8,
+    "positions": []
+  },
+  {
+    "prefecture": "北海道",
+    "party": "公明党",
+    "count": 8,
+    "positions": []
+  },
+  {
+    "prefecture": "北海道",
+    "party": "日本共産党",
+    "count": 2,
+    "positions": []
+  },
+  {
+    "prefecture": "北海道",
+    "party": "北海道維新の会",
+    "count": 1,
+    "positions": [],
+    "description": "資料により維新・大地と表記される場合がある"
+  },
+  {
+    "prefecture": "青森県",
+    "party": "自由民主党",
+    "count": 28,
+    "positions": ["議長: 工藤慎康氏", "副議長: 齊藤爾氏"],
+    "description": "2025年12月16日現在。議員定数48人/現員47人"
+  },
+  {
+    "prefecture": "青森県",
+    "party": "立憲民主・無所属の会",
+    "count": 5,
+    "positions": [],
+    "description": "代表質問権・議会運営委員選出権を有する"
+  },
+  {
+    "prefecture": "青森県",
+    "party": "オール青森",
+    "count": 5,
+    "positions": [],
+    "description": "代表質問権・議会運営委員選出権を有する"
+  },
+  {
+    "prefecture": "青森県",
+    "party": "日本共産党",
+    "count": 3,
+    "positions": []
+  },
+  {
+    "prefecture": "青森県",
+    "party": "公明党",
+    "count": 2,
+    "positions": []
+  },
+  {
+    "prefecture": "青森県",
+    "party": "参政党",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "青森県",
+    "party": "無所属",
+    "count": 3,
+    "positions": [],
+    "description": "平川市選挙区に欠員1名"
+  },
+  {
+    "prefecture": "岩手県",
+    "party": "自由民主党",
+    "count": 17,
+    "positions": ["議長: 城内愛彦氏"],
+    "description": "令和8年1月21日現在。2025年8月に第1会派へ。定数48人/現員45人"
+  },
+  {
+    "prefecture": "岩手県",
+    "party": "希望いわて",
+    "count": 14,
+    "positions": []
+  },
+  {
+    "prefecture": "岩手県",
+    "party": "いわて県民クラブ・無所属の会",
+    "count": 5,
+    "positions": ["副議長: 佐々木努氏"]
+  },
+  {
+    "prefecture": "岩手県",
+    "party": "いわて新政会",
+    "count": 5,
+    "positions": []
+  },
+  {
+    "prefecture": "岩手県",
+    "party": "日本共産党",
+    "count": 2,
+    "positions": []
+  },
+  {
+    "prefecture": "岩手県",
+    "party": "社民党",
+    "count": 1,
+    "positions": [],
+    "description": "会派に所属しない議員"
+  },
+  {
+    "prefecture": "岩手県",
+    "party": "公明党",
+    "count": 1,
+    "positions": [],
+    "description": "会派に所属しない議員"
+  },
+  {
+    "prefecture": "宮城県",
+    "party": "自由民主党・県民会議",
+    "count": 31,
+    "positions": ["議長: 佐々木幸士氏", "副議長: 村上久仁氏"],
+    "description": "2026年2月13日現在。最大会派。定数59人/現員56人"
+  },
+  {
+    "prefecture": "宮城県",
+    "party": "みやぎ県民の声",
+    "count": 9,
+    "positions": []
+  },
+  {
+    "prefecture": "宮城県",
+    "party": "日本共産党宮城県会議員団",
+    "count": 5,
+    "positions": []
+  },
+  {
+    "prefecture": "宮城県",
+    "party": "公明党県議団",
+    "count": 4,
+    "positions": []
+  },
+  {
+    "prefecture": "宮城県",
+    "party": "立憲・無所属クラブ",
+    "count": 3,
+    "positions": []
+  },
+  {
+    "prefecture": "宮城県",
+    "party": "21世紀クラブ",
+    "count": 2,
+    "positions": []
+  },
+  {
+    "prefecture": "宮城県",
+    "party": "日本維新の会",
+    "count": 2,
+    "positions": []
+  },
+  {
+    "prefecture": "宮城県",
+    "party": "空席",
+    "count": 3,
+    "positions": [],
+    "description": "青葉・若林・亘理の各選挙区で計3名の欠員"
+  },
+  {
+    "prefecture": "秋田県",
+    "party": "自由民主党",
+    "count": 27,
+    "positions": ["議長: 工藤嘉範氏", "副議長: 島田薫氏"],
+    "description": "令和7年5月14日現在。定数41人/欠員なし"
+  },
+  {
+    "prefecture": "秋田県",
+    "party": "みらい",
+    "count": 5,
+    "positions": []
+  },
+  {
+    "prefecture": "秋田県",
+    "party": "立憲民主党",
+    "count": 5,
+    "positions": []
+  },
+  {
+    "prefecture": "秋田県",
+    "party": "社会民主党",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "秋田県",
+    "party": "日本共産党",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "秋田県",
+    "party": "公明党",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "秋田県",
+    "party": "きらり",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "山形県",
+    "party": "自由民主党",
+    "count": 26,
+    "positions": ["議長: 田澤伸一氏", "副議長: 楳津博士氏"],
+    "description": "2026年2月20日現在。定数43人/欠員なし（補欠選挙により充足）"
+  },
+  {
+    "prefecture": "山形県",
+    "party": "県政クラブ",
+    "count": 14,
+    "positions": [],
+    "description": "立憲・国民・無所属の混合会派"
+  },
+  {
+    "prefecture": "山形県",
+    "party": "日本共産党山形県議団",
+    "count": 2,
+    "positions": []
+  },
+  {
+    "prefecture": "山形県",
+    "party": "公明党",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "福島県",
+    "party": "自由民主党福島県議会議員会",
+    "count": 28,
+    "positions": ["議長: 矢吹貢一氏", "副議長: 佐藤雅裕氏"],
+    "description": "令和8年1月23日現在。現員55人"
+  },
+  {
+    "prefecture": "福島県",
+    "party": "福島県議会県民連合議員会",
+    "count": 17,
+    "positions": []
+  },
+  {
+    "prefecture": "福島県",
+    "party": "日本共産党福島県議会議員団",
+    "count": 4,
+    "positions": []
+  },
+  {
+    "prefecture": "福島県",
+    "party": "公明党福島県議会議員団",
+    "count": 4,
+    "positions": []
+  },
+  {
+    "prefecture": "福島県",
+    "party": "日本維新・無所属の会",
+    "count": 2,
+    "positions": []
+  },
   {
     "prefecture": "東京都",
     "party": "都民ファーストの会",
@@ -399,5 +679,1295 @@
     "party": "無所属",
     "count": 4,
     "positions": []
+  },
+  {
+    "prefecture": "新潟県",
+    "party": "自由民主党",
+    "count": 32,
+    "positions": ["議長: 青柳 正司氏", "副議長: 笠原 義宗氏"],
+    "description": "最大会派。令和7年6月に正副議長が就任"
+  },
+  {
+    "prefecture": "新潟県",
+    "party": "未来にいがた",
+    "count": 9,
+    "positions": []
+  },
+  {
+    "prefecture": "新潟県",
+    "party": "リベラル新潟",
+    "count": 6,
+    "positions": []
+  },
+  {
+    "prefecture": "新潟県",
+    "party": "真政にいがた",
+    "count": 3,
+    "positions": []
+  },
+  {
+    "prefecture": "新潟県",
+    "party": "公明党",
+    "count": 2,
+    "positions": []
+  },
+  {
+    "prefecture": "新潟県",
+    "party": "無所属",
+    "count": 1,
+    "positions": ["馬場 秀幸氏"],
+    "description": "議員定数53人/現員53人。2023年5月時点名簿および2026年2月活動状況に基づく"
+  },
+  {
+    "prefecture": "富山県",
+    "party": "自由民主党富山県議会議員会",
+    "count": 35,
+    "positions": ["議長: 武田 慎一氏", "副議長: 永森 直人氏"],
+    "description": "最大会派。2025年4月に「自民党新令和会」の5名が合流し35人体制に"
+  },
+  {
+    "prefecture": "富山県",
+    "party": "富山県議会立憲民主党議員会",
+    "count": 3,
+    "positions": []
+  },
+  {
+    "prefecture": "富山県",
+    "party": "日本共産党富山県議員会",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "富山県",
+    "party": "公明党富山県議員会",
+    "count": 1,
+    "positions": [],
+    "description": "議員定数40人/現員40人。2025年6月10日現在"
+  },
+  {
+    "prefecture": "石川県",
+    "party": "自由民主党石川県議会議員協議会",
+    "count": 29,
+    "positions": ["議長: 不破 大仁氏", "副議長: 横山 隆也氏"],
+    "description": "2026年2月13日に正副議長を選出。唯一の代表質問権保持会派"
+  },
+  {
+    "prefecture": "石川県",
+    "party": "未来石川議員会",
+    "count": 6,
+    "positions": []
+  },
+  {
+    "prefecture": "石川県",
+    "party": "公明党",
+    "count": 2,
+    "positions": []
+  },
+  {
+    "prefecture": "石川県",
+    "party": "日本共産党",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "石川県",
+    "party": "1人会派/無所属",
+    "count": 3,
+    "positions": [],
+    "description": "無所属の会(1)/まっすぐ県民目線の会(1)/参政党(1)。現員41名/2025年12月25日現在"
+  },
+  {
+    "prefecture": "福井県",
+    "party": "自民党福井県議会",
+    "count": 25,
+    "positions": ["議長: 小堀 友廣氏", "副議長: 田中 三津彦氏"],
+    "description": "2026年2月20日に新議長を選出。最大会派"
+  },
+  {
+    "prefecture": "福井県",
+    "party": "民主・みらい",
+    "count": 4,
+    "positions": []
+  },
+  {
+    "prefecture": "福井県",
+    "party": "ふくいの党",
+    "count": 3,
+    "positions": []
+  },
+  {
+    "prefecture": "福井県",
+    "party": "越前若狭の会",
+    "count": 2,
+    "positions": []
+  },
+  {
+    "prefecture": "福井県",
+    "party": "公明党",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "福井県",
+    "party": "無所属・空席",
+    "count": 2,
+    "positions": ["無所属: 後藤正邦氏"],
+    "description": "2026年1月の補選で後藤氏当選。福井市選挙区に1人の欠員。定数37人/現員36人"
+  },
+  {
+    "prefecture": "山梨県",
+    "party": "自由民主党系（3会派計）",
+    "count": 26,
+    "positions": [],
+    "description": "政風やまなし(15)/新緑の会(8)/開の国(3)の計26人で過半数"
+  },
+  {
+    "prefecture": "山梨県",
+    "party": "未来やまなし",
+    "count": 4,
+    "positions": []
+  },
+  {
+    "prefecture": "山梨県",
+    "party": "日本共産党",
+    "count": 2,
+    "positions": []
+  },
+  {
+    "prefecture": "山梨県",
+    "party": "1人会派",
+    "count": 4,
+    "positions": [],
+    "description": "公明党/リベラル山梨/やまなし県民会議/えがお夢。現員36人/令和7年9月17日現在"
+  },
+  {
+    "prefecture": "長野県",
+    "party": "自由民主党県議団",
+    "count": 24,
+    "positions": ["議長: 依田 明善氏"],
+    "description": "最大会派。2025年12月12日時点"
+  },
+  {
+    "prefecture": "長野県",
+    "party": "改革信州",
+    "count": 13,
+    "positions": ["副議長: 中川 博司氏"]
+  },
+  {
+    "prefecture": "長野県",
+    "party": "新政策議員団",
+    "count": 7,
+    "positions": []
+  },
+  {
+    "prefecture": "長野県",
+    "party": "公明党長野県議団",
+    "count": 5,
+    "positions": []
+  },
+  {
+    "prefecture": "長野県",
+    "party": "日本共産党県議団",
+    "count": 5,
+    "positions": []
+  },
+  {
+    "prefecture": "長野県",
+    "party": "無所属・空席",
+    "count": 3,
+    "positions": ["無所属: 宮澤 敏文氏", "無所属: 小林 君男氏"],
+    "description": "議員定数57人/現員56人/欠員1"
+  },
+  {
+    "prefecture": "岐阜県",
+    "party": "県政自民クラブ",
+    "count": 33,
+    "positions": ["議長: 小原 尚氏", "副議長: 高殿 尚氏"],
+    "description": "最大会派。令和8年1月28日現在"
+  },
+  {
+    "prefecture": "岐阜県",
+    "party": "県民クラブ",
+    "count": 5,
+    "positions": []
+  },
+  {
+    "prefecture": "岐阜県",
+    "party": "岐阜県議会公明党",
+    "count": 2,
+    "positions": []
+  },
+  {
+    "prefecture": "岐阜県",
+    "party": "日本共産党",
+    "count": 1,
+    "positions": ["中川 裕子氏"]
+  },
+  {
+    "prefecture": "岐阜県",
+    "party": "無所属・空席",
+    "count": 5,
+    "positions": ["平野 恭子氏", "酒向 薫氏", "木村 千秋氏"],
+    "description": "大垣市(1)および加茂郡(1)に計2人の欠員。定数46人/現員44人"
+  },
+  {
+    "prefecture": "静岡県",
+    "party": "自民改革会議",
+    "count": 41,
+    "positions": ["代表: 鈴木澄美氏"],
+    "description": "最大会派。2025年2月18日更新情報"
+  },
+  {
+    "prefecture": "静岡県",
+    "party": "ふじのくに県民クラブ",
+    "count": 17,
+    "positions": ["会長: 四本康久氏"],
+    "description": "第2会派。鈴木康友知事の支援母体"
+  },
+  {
+    "prefecture": "静岡県",
+    "party": "公明党静岡県議団",
+    "count": 5,
+    "positions": []
+  },
+  {
+    "prefecture": "静岡県",
+    "party": "無所属",
+    "count": 5,
+    "positions": ["遠藤行洋氏", "塚本大氏", "桜井勝郎氏", "大石哲司氏", "山本隆久氏"],
+    "description": "議員定数68人/現員68人。欠員なし"
+  },
+  {
+    "prefecture": "愛知県",
+    "party": "自由民主党愛知県議員団",
+    "count": 54,
+    "positions": ["議長: 川嶋 太郎氏", "副議長: 南部 文宏氏"],
+    "description": "最大会派。2026年2月16日現在"
+  },
+  {
+    "prefecture": "愛知県",
+    "party": "あいち民主県議団",
+    "count": 25,
+    "positions": []
+  },
+  {
+    "prefecture": "愛知県",
+    "party": "公明党愛知県議員団",
+    "count": 4,
+    "positions": []
+  },
+  {
+    "prefecture": "愛知県",
+    "party": "減税日本愛知県議員団",
+    "count": 3,
+    "positions": []
+  },
+  {
+    "prefecture": "愛知県",
+    "party": "無所属・空席",
+    "count": 16,
+    "positions": ["県政自民クラブ: 筒井タカヤ氏", "日本共産党: 下奥奈歩氏"],
+    "description": "無所属9人（1人会派含む）および欠員7人。定数102人/現員95人"
+  },
+  {
+    "prefecture": "三重県",
+    "party": "新政みえ",
+    "count": 19,
+    "positions": ["副議長: 森野 真治氏"],
+    "description": "単独会派として最大会派。令和7年11月18日現在"
+  },
+  {
+    "prefecture": "三重県",
+    "party": "自由民主党",
+    "count": 16,
+    "positions": [],
+    "description": "自民党系会派の一つ"
+  },
+  {
+    "prefecture": "三重県",
+    "party": "自民党県議団",
+    "count": 5,
+    "positions": ["議長: 服部 富男氏"],
+    "description": "自民党系会派の一つ"
+  },
+  {
+    "prefecture": "三重県",
+    "party": "草莽",
+    "count": 3,
+    "positions": []
+  },
+  {
+    "prefecture": "三重県",
+    "party": "公明党",
+    "count": 2,
+    "positions": []
+  },
+  {
+    "prefecture": "三重県",
+    "party": "日本共産党",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "三重県",
+    "party": "参政党",
+    "count": 1,
+    "positions": ["難波聖子氏"],
+    "description": "令和7年9月の補欠選挙により新たに加入"
+  },
+  {
+    "prefecture": "三重県",
+    "party": "欠員",
+    "count": 1,
+    "positions": [],
+    "description": "定数48人/現員47人。鈴鹿市選挙区に欠員"
+  },
+  {
+    "prefecture": "滋賀県",
+    "party": "自由民主党滋賀県議会議員団",
+    "count": 20,
+    "positions": ["議長: 目片 信悟氏", "副議長: 加藤 誠一氏"],
+    "description": "最大会派。令和7年4月1日現在"
+  },
+  {
+    "prefecture": "滋賀県",
+    "party": "チームしが 県議団",
+    "count": 10,
+    "positions": []
+  },
+  {
+    "prefecture": "滋賀県",
+    "party": "さざなみ倶楽部",
+    "count": 3,
+    "positions": []
+  },
+  {
+    "prefecture": "滋賀県",
+    "party": "滋賀維新の会",
+    "count": 3,
+    "positions": []
+  },
+  {
+    "prefecture": "滋賀県",
+    "party": "公明党滋賀県議団",
+    "count": 2,
+    "positions": []
+  },
+  {
+    "prefecture": "滋賀県",
+    "party": "日本共産党滋賀県議会議員団",
+    "count": 2,
+    "positions": []
+  },
+  {
+    "prefecture": "滋賀県",
+    "party": "無所属",
+    "count": 2,
+    "positions": ["森重重則氏を含む"],
+    "description": "定数44人/現員42人。2人の欠員"
+  },
+  {
+    "prefecture": "京都府",
+    "party": "自由民主党京都府議会議員団",
+    "count": 27,
+    "positions": ["議長: 荒巻 隆三氏", "副議長: 兎本 和久氏"],
+    "description": "最大会派。府政与党。令和8年1月27日現在"
+  },
+  {
+    "prefecture": "京都府",
+    "party": "国民民主党・日本維新の会京都府議会議員団",
+    "count": 11,
+    "positions": [],
+    "description": "単独第2会派。中間会派"
+  },
+  {
+    "prefecture": "京都府",
+    "party": "日本共産党京都府議会議員団",
+    "count": 9,
+    "positions": [],
+    "description": "府政野党"
+  },
+  {
+    "prefecture": "京都府",
+    "party": "府民クラブ京都府議会議員団",
+    "count": 6,
+    "positions": [],
+    "description": "立憲民主党系。府政与党"
+  },
+  {
+    "prefecture": "京都府",
+    "party": "公明党京都府議会議員団",
+    "count": 5,
+    "positions": [],
+    "description": "府政与党"
+  },
+  {
+    "prefecture": "京都府",
+    "party": "京都が好きだ",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "京都府",
+    "party": "欠員",
+    "count": 1,
+    "positions": [],
+    "description": "定数60人/現員59人"
+  },
+  {
+    "prefecture": "大阪府",
+    "party": "大阪維新の会大阪府議会議員団",
+    "count": 52,
+    "positions": ["代表: 河崎大樹氏", "幹事長: 角谷庄一氏", "政務調査会長: 前田洋輔氏"],
+    "description": "令和8年2月10日現在。補選で当選した土井一慶氏が加入"
+  },
+  {
+    "prefecture": "大阪府",
+    "party": "公明党大阪府議会議員団",
+    "count": 14,
+    "positions": []
+  },
+  {
+    "prefecture": "大阪府",
+    "party": "自由民主党大阪府議会議員団",
+    "count": 6,
+    "positions": []
+  },
+  {
+    "prefecture": "大阪府",
+    "party": "民主ネット大阪府議会議員団",
+    "count": 2,
+    "positions": []
+  },
+  {
+    "prefecture": "大阪府",
+    "party": "日本共産党大阪府議会議員団",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "大阪府",
+    "party": "大阪なにわの和",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "大阪府",
+    "party": "おおさか未来プロジェクト",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "大阪府",
+    "party": "せっつ府民の会",
+    "count": 1,
+    "positions": [],
+    "description": "現員78人。府民文化常任委員会に1人の欠員"
+  },
+  {
+    "prefecture": "奈良県",
+    "party": "自由民主党・無所属の会",
+    "count": 15,
+    "positions": [],
+    "description": "最大会派。県政野党。2026年2月17日現在"
+  },
+  {
+    "prefecture": "奈良県",
+    "party": "日本維新の会",
+    "count": 11,
+    "positions": [],
+    "description": "県政与党"
+  },
+  {
+    "prefecture": "奈良県",
+    "party": "自由民主党",
+    "count": 7,
+    "positions": ["議長: 田中 惟允氏"],
+    "description": "2025年4月に最大会派から分裂し結成"
+  },
+  {
+    "prefecture": "奈良県",
+    "party": "公明党",
+    "count": 3,
+    "positions": []
+  },
+  {
+    "prefecture": "奈良県",
+    "party": "無所属",
+    "count": 4,
+    "positions": ["副議長: 藤野 良次氏（立憲民主党）"],
+    "description": "内訳: 無所属2、共産1、立憲1。新政ならは2026年2月17日に解消"
+  },
+  {
+    "prefecture": "奈良県",
+    "party": "欠員",
+    "count": 3,
+    "positions": [],
+    "description": "定数43人/現員40人。大和高田市、高市郡・橿原市、北葛城郡の各選挙区"
+  },
+  {
+    "prefecture": "和歌山県",
+    "party": "自由民主党県議団",
+    "count": 25,
+    "positions": ["議長: 岩田 弘彦氏", "副議長: 秋月 史成氏"],
+    "description": "最大会派。令和8年2月18日現在"
+  },
+  {
+    "prefecture": "和歌山県",
+    "party": "改新クラブ",
+    "count": 5,
+    "positions": []
+  },
+  {
+    "prefecture": "和歌山県",
+    "party": "公明党県議団",
+    "count": 3,
+    "positions": []
+  },
+  {
+    "prefecture": "和歌山県",
+    "party": "無所属の会",
+    "count": 2,
+    "positions": []
+  },
+  {
+    "prefecture": "和歌山県",
+    "party": "日本共産党",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "和歌山県",
+    "party": "無所属クラブ",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "和歌山県",
+    "party": "みらいの会",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "和歌山県",
+    "party": "会派に属さない議員",
+    "count": 1,
+    "positions": ["谷 洋一氏"],
+    "description": "定数42人/現員39人。3人の欠員。2026年3月に補選予定"
+  },
+  {
+    "prefecture": "鳥取県",
+    "party": "鳥取県議会自由民主党",
+    "count": 19,
+    "positions": ["議長: 福田 俊史氏", "副議長: 浜田 一哉氏"],
+    "description": "最大会派。交渉団体。令和7年6月時点"
+  },
+  {
+    "prefecture": "鳥取県",
+    "party": "鳥取県議会民主とっとり",
+    "count": 6,
+    "positions": [],
+    "description": "交渉団体"
+  },
+  {
+    "prefecture": "鳥取県",
+    "party": "公明党鳥取県議会議員団",
+    "count": 3,
+    "positions": []
+  },
+  {
+    "prefecture": "鳥取県",
+    "party": "無所属",
+    "count": 7,
+    "positions": [],
+    "description": "日本共産党、立憲民主党、日本維新の会の所属議員を含む。現員35人"
+  },
+  {
+    "prefecture": "島根県",
+    "party": "自由民主党島根県議会議員連盟",
+    "count": 15,
+    "positions": ["議長: 池田 一氏", "副議長: 高橋 雅彦氏"],
+    "description": "最大会派。令和7年6月9日時点"
+  },
+  {
+    "prefecture": "島根県",
+    "party": "自由民主党ネクスト島根",
+    "count": 10,
+    "positions": [],
+    "description": "2019年知事選をきっかけに分裂し並存"
+  },
+  {
+    "prefecture": "島根県",
+    "party": "民主県民クラブ",
+    "count": 5,
+    "positions": []
+  },
+  {
+    "prefecture": "島根県",
+    "party": "公明党島根県議団",
+    "count": 2,
+    "positions": [],
+    "description": "交渉会派に属しない議員"
+  },
+  {
+    "prefecture": "島根県",
+    "party": "日本共産党島根県議団",
+    "count": 2,
+    "positions": [],
+    "description": "交渉会派に属しない議員"
+  },
+  {
+    "prefecture": "島根県",
+    "party": "無所属",
+    "count": 1,
+    "positions": ["成相 安信氏"],
+    "description": "議員定数36人/現員35人/欠員1"
+  },
+  {
+    "prefecture": "岡山県",
+    "party": "自由民主党岡山県議団",
+    "count": 33,
+    "positions": ["議長: 遠藤 康洋氏", "副議長: 小林 義明氏"],
+    "description": "最大会派。県政与党。令和7年5月15日現在"
+  },
+  {
+    "prefecture": "岡山県",
+    "party": "民主・県民クラブ",
+    "count": 10,
+    "positions": [],
+    "description": "県政与党"
+  },
+  {
+    "prefecture": "岡山県",
+    "party": "公明党岡山県議団",
+    "count": 6,
+    "positions": [],
+    "description": "県政与党"
+  },
+  {
+    "prefecture": "岡山県",
+    "party": "日本共産党岡山県議会議員団",
+    "count": 3,
+    "positions": [],
+    "description": "県政野党"
+  },
+  {
+    "prefecture": "岡山県",
+    "party": "無所属",
+    "count": 2,
+    "positions": ["蜂谷 弘美氏", "佐古 一太氏"],
+    "description": "議員定数55人/現員54人/欠員1"
+  },
+  {
+    "prefecture": "広島県",
+    "party": "自由民主党広島県議会議員連盟",
+    "count": 34,
+    "positions": ["議長: 中本 隆志氏", "副議長: 山下 智之氏"],
+    "description": "最大会派。自民議連。令和8年2月5日現在"
+  },
+  {
+    "prefecture": "広島県",
+    "party": "広島県議会民主県政会",
+    "count": 14,
+    "positions": [],
+    "description": "民主県政会"
+  },
+  {
+    "prefecture": "広島県",
+    "party": "公明党広島県議会議員団",
+    "count": 6,
+    "positions": []
+  },
+  {
+    "prefecture": "広島県",
+    "party": "自由民主党広島県議会広志会",
+    "count": 3,
+    "positions": []
+  },
+  {
+    "prefecture": "広島県",
+    "party": "日本共産党広島県議会議員団",
+    "count": 2,
+    "positions": []
+  },
+  {
+    "prefecture": "広島県",
+    "party": "1人会派/無所属",
+    "count": 4,
+    "positions": [],
+    "description": "自民会/無所属ひとわ/ひろしま、刷新。/義友会。現員63人/欠員1"
+  },
+  {
+    "prefecture": "山口県",
+    "party": "自由民主党",
+    "count": 27,
+    "positions": ["議長: 柳居 俊学氏", "副議長: 河野 亨氏"],
+    "description": "最大会派。令和8年1月22日現在"
+  },
+  {
+    "prefecture": "山口県",
+    "party": "公明党",
+    "count": 5,
+    "positions": []
+  },
+  {
+    "prefecture": "山口県",
+    "party": "やまぐち県政会",
+    "count": 4,
+    "positions": []
+  },
+  {
+    "prefecture": "山口県",
+    "party": "日本共産党",
+    "count": 3,
+    "positions": []
+  },
+  {
+    "prefecture": "山口県",
+    "party": "1人会派",
+    "count": 7,
+    "positions": [],
+    "description": "自由民主党新生会/社民党・市民連合/新政クラブ/草の根/県民の誇りを育む会/すずらんの会/未来創政の会。現員46人/欠員1"
+  },
+  {
+    "prefecture": "兵庫県",
+    "party": "自由民主党",
+    "count": 35,
+    "positions": ["議長: 山口晋平氏", "副議長: 大豊康臣氏"],
+    "description": "最大会派。令和8年1月15日の届出に基づく"
+  },
+  {
+    "prefecture": "兵庫県",
+    "party": "維新の会",
+    "count": 16,
+    "positions": [],
+    "description": "2026年1月に2名が退団し、18人から16人に減少"
+  },
+  {
+    "prefecture": "兵庫県",
+    "party": "公明党",
+    "count": 13,
+    "positions": []
+  },
+  {
+    "prefecture": "兵庫県",
+    "party": "ひょうご県民連合",
+    "count": 8,
+    "positions": []
+  },
+  {
+    "prefecture": "兵庫県",
+    "party": "躍動の会",
+    "count": 3,
+    "positions": []
+  },
+  {
+    "prefecture": "兵庫県",
+    "party": "日本共産党",
+    "count": 2,
+    "positions": []
+  },
+  {
+    "prefecture": "兵庫県",
+    "party": "無所属",
+    "count": 5,
+    "positions": [],
+    "description": "維新を退団した2名を含む"
+  },
+  {
+    "prefecture": "兵庫県",
+    "party": "空席",
+    "count": 4,
+    "positions": [],
+    "description": "議員定数86人/現員82人。伊丹市、姫路市、たつの市・揖保郡、豊岡市・美方郡の各選挙区"
+  },
+  {
+    "prefecture": "徳島県",
+    "party": "徳島県議会自由民主党",
+    "count": 17,
+    "positions": ["議長: 須見 一仁氏", "副議長: 大塚 明廣氏"],
+    "description": "最大会派。令和8年1月27日現在"
+  },
+  {
+    "prefecture": "徳島県",
+    "party": "新しい県政を創る会",
+    "count": 5,
+    "positions": [],
+    "description": "立憲民主党所属議員と無所属議員らで構成"
+  },
+  {
+    "prefecture": "徳島県",
+    "party": "自由民主党県民会議",
+    "count": 4,
+    "positions": []
+  },
+  {
+    "prefecture": "徳島県",
+    "party": "グローカルplus",
+    "count": 3,
+    "positions": []
+  },
+  {
+    "prefecture": "徳島県",
+    "party": "真政会",
+    "count": 2,
+    "positions": []
+  },
+  {
+    "prefecture": "徳島県",
+    "party": "公明党徳島県議団",
+    "count": 1,
+    "positions": [],
+    "description": "2025年11月の不祥事に伴う異動により1名体制"
+  },
+  {
+    "prefecture": "徳島県",
+    "party": "日本共産党",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "徳島県",
+    "party": "護民官",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "徳島県",
+    "party": "元気とくしま",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "徳島県",
+    "party": "日本維新の会",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "徳島県",
+    "party": "空席",
+    "count": 2,
+    "positions": [],
+    "description": "議員定数38人/現員36人"
+  },
+  {
+    "prefecture": "香川県",
+    "party": "自由民主党香川県政会",
+    "count": 21,
+    "positions": ["議長: 谷久 浩一氏", "副議長: 氏家 孝志氏"],
+    "description": "最大会派。2025年5月7日現在"
+  },
+  {
+    "prefecture": "香川県",
+    "party": "香川県議会自由民主党議員会",
+    "count": 5,
+    "positions": []
+  },
+  {
+    "prefecture": "香川県",
+    "party": "香川県議会国民民主党議員会",
+    "count": 5,
+    "positions": []
+  },
+  {
+    "prefecture": "香川県",
+    "party": "立憲・市民派ネット",
+    "count": 4,
+    "positions": []
+  },
+  {
+    "prefecture": "香川県",
+    "party": "香川県議会公明党議員会",
+    "count": 2,
+    "positions": []
+  },
+  {
+    "prefecture": "香川県",
+    "party": "日本共産党香川県議会議員団",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "香川県",
+    "party": "みらい香川",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "香川県",
+    "party": "香川・せとうちnext",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "香川県",
+    "party": "空席",
+    "count": 1,
+    "positions": [],
+    "description": "議員定数41人/現員40人"
+  },
+  {
+    "prefecture": "愛媛県",
+    "party": "自由民主党",
+    "count": 30,
+    "positions": ["議長: 福羅 浩一氏", "副議長: 大西 誠氏"],
+    "description": "最大会派。令和7年7月15日現在"
+  },
+  {
+    "prefecture": "愛媛県",
+    "party": "愛媛維新の会",
+    "count": 4,
+    "positions": [],
+    "description": "知事を支持する地域政党。日本維新の会からは離脱"
+  },
+  {
+    "prefecture": "愛媛県",
+    "party": "公明党",
+    "count": 3,
+    "positions": []
+  },
+  {
+    "prefecture": "愛媛県",
+    "party": "リベラル愛媛",
+    "count": 2,
+    "positions": []
+  },
+  {
+    "prefecture": "愛媛県",
+    "party": "日本共産党",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "愛媛県",
+    "party": "ネットワーク市民の窓",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "愛媛県",
+    "party": "国民民主党",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "愛媛県",
+    "party": "無所属",
+    "count": 4,
+    "positions": ["井川剛氏", "菊池伸英氏", "中野泰誠氏", "西岡新氏"]
+  },
+  {
+    "prefecture": "愛媛県",
+    "party": "空席",
+    "count": 1,
+    "positions": [],
+    "description": "議員定数47人/現員46人"
+  },
+  {
+    "prefecture": "高知県",
+    "party": "自由民主党",
+    "count": 21,
+    "positions": ["議長: 三石文隆氏", "副議長: 上田貢太郎氏"],
+    "description": "最大勢力。濱田省司知事を支える与党。2026年2月23日現在（定数から他会派合計を差し引いた算出値）"
+  },
+  {
+    "prefecture": "高知県",
+    "party": "日本共産党",
+    "count": 7,
+    "positions": [],
+    "description": "県政野党における最大会派"
+  },
+  {
+    "prefecture": "高知県",
+    "party": "公明党",
+    "count": 4,
+    "positions": []
+  },
+  {
+    "prefecture": "高知県",
+    "party": "県民の会",
+    "count": 2,
+    "positions": [],
+    "description": "2026年2月の補選で当選した水野雪絵氏が合流"
+  },
+  {
+    "prefecture": "高知県",
+    "party": "南風",
+    "count": 1,
+    "positions": ["清藤真司氏"]
+  },
+  {
+    "prefecture": "高知県",
+    "party": "県政会",
+    "count": 1,
+    "positions": ["上田周五氏"]
+  },
+  {
+    "prefecture": "高知県",
+    "party": "未定（無所属）",
+    "count": 1,
+    "positions": ["岡﨑哲也氏"],
+    "description": "2026年1月の土佐清水市補選で当選"
+  },
+  {
+    "prefecture": "福岡県",
+    "party": "自民党県議団",
+    "count": 41,
+    "positions": ["議長: 藏内 勇夫氏", "副議長: 中尾 正幸氏"],
+    "description": "最大会派。2025年11月17日現在"
+  },
+  {
+    "prefecture": "福岡県",
+    "party": "民主県政県議団",
+    "count": 20,
+    "positions": []
+  },
+  {
+    "prefecture": "福岡県",
+    "party": "公明党",
+    "count": 10,
+    "positions": []
+  },
+  {
+    "prefecture": "福岡県",
+    "party": "新政会",
+    "count": 6,
+    "positions": []
+  },
+  {
+    "prefecture": "福岡県",
+    "party": "無所属の会/自由と繁栄の会",
+    "count": 4,
+    "positions": [],
+    "description": "各2名ずつ"
+  },
+  {
+    "prefecture": "福岡県",
+    "party": "1人会派（計6会派）",
+    "count": 6,
+    "positions": [],
+    "description": "ふくおか政策の会/緑友会/桜和会/至誠会/日本維新の会福岡/豊築会"
+  },
+  {
+    "prefecture": "福岡県",
+    "party": "空席",
+    "count": 4,
+    "positions": [],
+    "description": "現員87人/空席4"
+  },
+  {
+    "prefecture": "佐賀県",
+    "party": "自由民主党",
+    "count": 17,
+    "positions": ["議長: 宮原 真一氏"],
+    "description": "最大会派。令和7年4月24日現在"
+  },
+  {
+    "prefecture": "佐賀県",
+    "party": "自由民主党ネクストさが",
+    "count": 11,
+    "positions": ["副議長: 八谷 克幸氏"],
+    "description": "2025年3月に最大会派から11名が離脱し結成"
+  },
+  {
+    "prefecture": "佐賀県",
+    "party": "県民ネットワーク",
+    "count": 6,
+    "positions": []
+  },
+  {
+    "prefecture": "佐賀県",
+    "party": "公明党",
+    "count": 2,
+    "positions": []
+  },
+  {
+    "prefecture": "佐賀県",
+    "party": "日本共産党",
+    "count": 1,
+    "positions": [],
+    "description": "定数37人/現員37人"
+  },
+  {
+    "prefecture": "長崎県",
+    "party": "自由民主党",
+    "count": 30,
+    "positions": ["予算決算委員会委員長: 前田 哲也氏", "議会運営委員会委員長: 宅島 寿一氏"],
+    "description": "最大会派。令和8年2月13日現在。補選当選の永安氏が加入"
+  },
+  {
+    "prefecture": "長崎県",
+    "party": "改革21",
+    "count": 9,
+    "positions": [],
+    "description": "補選当選の赤木氏が加入"
+  },
+  {
+    "prefecture": "長崎県",
+    "party": "公明党",
+    "count": 3,
+    "positions": []
+  },
+  {
+    "prefecture": "長崎県",
+    "party": "1人会派（計4会派）",
+    "count": 4,
+    "positions": [],
+    "description": "日本共産党/もったいないよ 長崎/まっすぐ長崎/もっと身近な県政の会。定数46人/現員46人"
+  },
+  {
+    "prefecture": "熊本県",
+    "party": "自由民主党",
+    "count": 35,
+    "positions": ["議長: 髙野 洋介氏", "副議長: 緒方 勇二氏"],
+    "description": "最大会派。2026年2月20日現在"
+  },
+  {
+    "prefecture": "熊本県",
+    "party": "立憲民主連合/公明党",
+    "count": 6,
+    "positions": [],
+    "description": "各3名ずつ"
+  },
+  {
+    "prefecture": "熊本県",
+    "party": "1人会派/無所属",
+    "count": 6,
+    "positions": [],
+    "description": "会派: 新社会党/参政党/熊本維新の会。無所属: 3名"
+  },
+  {
+    "prefecture": "熊本県",
+    "party": "空席",
+    "count": 2,
+    "positions": [],
+    "description": "定数49人/現員47人"
+  },
+  {
+    "prefecture": "大分県",
+    "party": "自由民主党",
+    "count": 24,
+    "positions": ["議長: 嶋 幸一氏", "副議長: 大友 栄二氏"],
+    "description": "最大会派。2026年2月時点"
+  },
+  {
+    "prefecture": "大分県",
+    "party": "県民クラブ",
+    "count": 11,
+    "positions": [],
+    "description": "旧社会党系や連合大分の推薦議員中心"
+  },
+  {
+    "prefecture": "大分県",
+    "party": "公明党",
+    "count": 3,
+    "positions": []
+  },
+  {
+    "prefecture": "大分県",
+    "party": "日本共産党",
+    "count": 2,
+    "positions": []
+  },
+  {
+    "prefecture": "大分県",
+    "party": "1人会派",
+    "count": 3,
+    "positions": [],
+    "description": "志士の会/無所属の会/日本維新の会。定数43人/現員43人"
+  },
+  {
+    "prefecture": "宮崎県",
+    "party": "宮崎県議会自由民主党",
+    "count": 24,
+    "positions": ["議長: 濵砂 守氏", "副議長: 日高 博之氏"],
+    "description": "最大会派。2026年2月13日現在"
+  },
+  {
+    "prefecture": "宮崎県",
+    "party": "公明党宮崎県議団",
+    "count": 4,
+    "positions": []
+  },
+  {
+    "prefecture": "宮崎県",
+    "party": "県民連合立憲",
+    "count": 3,
+    "positions": []
+  },
+  {
+    "prefecture": "宮崎県",
+    "party": "1人会派",
+    "count": 4,
+    "positions": [],
+    "description": "日本共産党/無所属の会 チームひむか/未来への風/自民党同志会。総数35名"
+  },
+  {
+    "prefecture": "鹿児島県",
+    "party": "自由民主党鹿児島県議会議員団",
+    "count": 33,
+    "positions": ["議長: 日高 滋氏", "副議長: 園田 豊氏"],
+    "description": "最大会派。2025年12月11日現在"
+  },
+  {
+    "prefecture": "鹿児島県",
+    "party": "県民連合",
+    "count": 7,
+    "positions": []
+  },
+  {
+    "prefecture": "鹿児島県",
+    "party": "公明党鹿児島県議団",
+    "count": 3,
+    "positions": []
+  },
+  {
+    "prefecture": "鹿児島県",
+    "party": "日本共産党県議団",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "鹿児島県",
+    "party": "無所属",
+    "count": 6,
+    "positions": [],
+    "description": "補選当選の久井氏を含む。定数51人/現員50人/欠員1"
+  },
+  {
+    "prefecture": "沖縄県",
+    "party": "沖縄自民党・無所属の会",
+    "count": 21,
+    "positions": ["議長: 中川 京貴氏"],
+    "description": "最大会派・野党。令和8年2月時点"
+  },
+  {
+    "prefecture": "沖縄県",
+    "party": "てぃーだ平和ネット/立憲・無所属の会",
+    "count": 14,
+    "positions": [],
+    "description": "各7名ずつ。県政与党。2026年1月に立憲系と中立が無所属合流"
+  },
+  {
+    "prefecture": "沖縄県",
+    "party": "公明党",
+    "count": 4,
+    "positions": ["副議長: 上原 章氏"],
+    "description": "中立"
+  },
+  {
+    "prefecture": "沖縄県",
+    "party": "日本共産党沖縄県議会議員団",
+    "count": 4,
+    "positions": [],
+    "description": "県政与党"
+  },
+  {
+    "prefecture": "沖縄県",
+    "party": "沖縄社会大衆党",
+    "count": 3,
+    "positions": [],
+    "description": "県政与党。定数48人/現員46人/欠員2"
   }
 ]
