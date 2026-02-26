@@ -3,13 +3,15 @@
     "prefecture": "東京都",
     "party": "都民ファーストの会",
     "count": 32,
-    "positions": ["議長:増子博樹氏"]
+    "positions": ["議長: 増子博樹氏"],
+    "description": "都民ファーストの会 東京都議団。2025年6月の都議選で第1会派を奪還"
   },
   {
     "prefecture": "東京都",
     "party": "自民党",
     "count": 22,
-    "positions": ["副議長:菅野弘一氏"]
+    "positions": ["副議長: 菅野弘一氏"],
+    "description": "東京都議会自由民主党"
   },
   {
     "prefecture": "東京都",
@@ -22,31 +24,36 @@
     "prefecture": "東京都",
     "party": "公明党",
     "count": 19,
-    "positions": []
+    "positions": [],
+    "description": "都議会公明党"
   },
   {
     "prefecture": "東京都",
     "party": "日本共産党",
     "count": 14,
-    "positions": []
+    "positions": [],
+    "description": "日本共産党東京都議会議員団"
   },
   {
     "prefecture": "東京都",
     "party": "国民民主党",
     "count": 9,
-    "positions": []
+    "positions": [],
+    "description": "国民民主党東京都議団。2025年選挙で初議席獲得"
   },
   {
     "prefecture": "東京都",
     "party": "参政党",
     "count": 3,
-    "positions": []
+    "positions": [],
+    "description": "東京都議会参政党。2025年選挙で初議席獲得"
   },
   {
     "prefecture": "東京都",
     "party": "自由を守る会",
     "count": 2,
-    "positions": []
+    "positions": [],
+    "description": "地域政党 自由を守る会"
   },
   {
     "prefecture": "東京都",
@@ -60,50 +67,46 @@
     "party": "空席",
     "count": 2,
     "positions": [],
-    "description": "議員定数127人/空席2/2026.1.27更新情報"
-  },
-  {
-    "prefecture": "大阪府",
-    "party": "自民党",
-    "count": 4,
-    "positions": ["議員", "委員"]
-  },
-  {
-    "prefecture": "大阪府",
-    "party": "維新",
-    "count": 6,
-    "positions": ["議員"]
-  },
-  {
-    "prefecture": "大阪府",
-    "party": "公明党",
-    "count": 2,
-    "positions": ["議員"]
+    "description": "議員定数127人/現員125人/令和8年1月27日現在"
   },
   {
     "prefecture": "神奈川県",
     "party": "自民党",
-    "description": "自由民主党神奈川県議会議員団",
     "count": 45,
-    "positions": ["議長"]
+    "positions": ["議長: 長田進治氏"],
+    "description": "自由民主党神奈川県議会議員団"
+  },
+  {
+    "prefecture": "神奈川県",
+    "party": "立憲民主党",
+    "count": 20,
+    "positions": [],
+    "description": "立憲民主党・かながわクラブ神奈川県議会議員団"
+  },
+  {
+    "prefecture": "神奈川県",
+    "party": "かながわ未来",
+    "count": 10,
+    "positions": [],
+    "description": "かながわ未来神奈川県議会議員団"
   },
   {
     "prefecture": "神奈川県",
     "party": "公明党",
     "count": 8,
-    "positions": ["副議長"],
-    "description": "神奈川県議会議員団"
+    "positions": ["副議長: 谷口かずふみ氏"],
+    "description": "公明党神奈川県議会議員団"
   },
   {
     "prefecture": "神奈川県",
     "party": "日本維新の会",
     "count": 5,
     "positions": [],
-    "description": "神奈川県議会議員団"
+    "description": "日本維新の会神奈川県議会議員団"
   },
   {
     "prefecture": "神奈川県",
-    "party": "立憲民主党",
+    "party": "立憲民主党（ネット）",
     "count": 4,
     "positions": [],
     "description": "県政会・立憲民主神奈川ネット神奈川県議会議員団"
@@ -124,42 +127,31 @@
   },
   {
     "prefecture": "神奈川県",
-    "party": "かながわ未来",
-    "count": 10,
-    "positions": [],
-    "description": "かながわ未来神奈川県議会議員団"
-  },
-  {
-    "prefecture": "神奈川県",
-    "party": "立憲民主党",
-    "count": 20,
-    "positions": [],
-    "description": "かながわクラブ神奈川県議会議員団"
-  },
-  {
-    "prefecture": "神奈川県",
     "party": "空席",
     "count": 6,
     "positions": [],
-    "description": "議員定数105人/空席6/2026.1.21更新情報"
+    "description": "議員定数105人/現員99人/2026年1月21日更新情報"
   },
   {
     "prefecture": "千葉県",
     "party": "自民党",
     "count": 49,
-    "positions": ["議長:武田正光氏", "副議長:三沢智s"]
+    "positions": ["議長: 武田正光氏", "副議長: 三沢智氏"],
+    "description": "自由民主党千葉県議会議員会"
   },
   {
     "prefecture": "千葉県",
     "party": "立憲民主党",
     "count": 13,
-    "positions": []
+    "positions": [],
+    "description": "立憲民主党千葉県議会議員会"
   },
   {
     "prefecture": "千葉県",
     "party": "公明党",
     "count": 8,
-    "positions": []
+    "positions": [],
+    "description": "公明党千葉県議会議員団"
   },
   {
     "prefecture": "千葉県",
@@ -172,14 +164,15 @@
     "prefecture": "千葉県",
     "party": "共産党",
     "count": 4,
-    "positions": []
+    "positions": [],
+    "description": "日本共産党千葉県議会議員団"
   },
   {
     "prefecture": "千葉県",
     "party": "1人会派",
     "count": 8,
     "positions": [],
-    "description": "平和の党/国民民主党千葉県議会議員会/千葉県民の声/リベラル民主/市民力/有志の会/野田民主の会/未来ちば"
+    "description": "平和の党/国民民主党/千葉県民の声/リベラル民主/市民力/有志の会/野田民主の会/未来ちば"
   },
   {
     "prefecture": "千葉県",
@@ -192,6 +185,219 @@
     "party": "空席",
     "count": 5,
     "positions": [],
-    "description": "議員定数95人/空席5/2025.12.25更新情報"
+    "description": "議員定数95人/現員90人/2025年12月25日現在"
+  },
+  {
+    "prefecture": "埼玉県",
+    "party": "自民",
+    "count": 51,
+    "positions": ["議長: 白土幸仁氏", "副議長: 飯塚俊彦氏"],
+    "description": "埼玉県議会自由民主党議員団"
+  },
+  {
+    "prefecture": "埼玉県",
+    "party": "民主フォーラム",
+    "count": 11,
+    "positions": [],
+    "description": "埼玉民主フォーラム"
+  },
+  {
+    "prefecture": "埼玉県",
+    "party": "公明",
+    "count": 9,
+    "positions": [],
+    "description": "埼玉県議会公明党議員団"
+  },
+  {
+    "prefecture": "埼玉県",
+    "party": "県民",
+    "count": 6,
+    "positions": [],
+    "description": "無所属県民会議"
+  },
+  {
+    "prefecture": "埼玉県",
+    "party": "共産党",
+    "count": 3,
+    "positions": [],
+    "description": "日本共産党埼玉県議会議員団"
+  },
+  {
+    "prefecture": "埼玉県",
+    "party": "改革",
+    "count": 1,
+    "positions": [],
+    "description": "無所属改革の会"
+  },
+  {
+    "prefecture": "埼玉県",
+    "party": "無所属",
+    "count": 4,
+    "positions": []
+  },
+  {
+    "prefecture": "埼玉県",
+    "party": "空席",
+    "count": 8,
+    "positions": [],
+    "description": "議員定数93人/現員85人/2026年1月27日現在"
+  },
+  {
+    "prefecture": "栃木県",
+    "party": "とちぎ自民党議員会",
+    "count": 29,
+    "positions": ["議長: 池田忠氏", "副議長: 琴寄昌男氏"],
+    "description": "令和8年1月28日現在"
+  },
+  {
+    "prefecture": "栃木県",
+    "party": "民主市民クラブ",
+    "count": 5,
+    "positions": []
+  },
+  {
+    "prefecture": "栃木県",
+    "party": "公明党",
+    "count": 3,
+    "positions": [],
+    "description": "公明党栃木県議会議員会"
+  },
+  {
+    "prefecture": "栃木県",
+    "party": "県民クラブ",
+    "count": 3,
+    "positions": []
+  },
+  {
+    "prefecture": "栃木県",
+    "party": "夢と希望あふれる栃木を創る会",
+    "count": 3,
+    "positions": []
+  },
+  {
+    "prefecture": "栃木県",
+    "party": "日本維新の会",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "栃木県",
+    "party": "日本共産党",
+    "count": 1,
+    "positions": [],
+    "description": "日本共産党栃木県議団"
+  },
+  {
+    "prefecture": "栃木県",
+    "party": "えがおの会",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "栃木県",
+    "party": "空席",
+    "count": 4,
+    "positions": [],
+    "description": "議員定数50人/現員46人"
+  },
+  {
+    "prefecture": "群馬県",
+    "party": "自由民主党",
+    "count": 30,
+    "positions": ["議長: 井下泰伸氏", "副議長: 伊藤清氏"],
+    "description": "令和7年8月21日現在"
+  },
+  {
+    "prefecture": "群馬県",
+    "party": "つる舞う",
+    "count": 5,
+    "positions": []
+  },
+  {
+    "prefecture": "群馬県",
+    "party": "リベラル群馬",
+    "count": 4,
+    "positions": []
+  },
+  {
+    "prefecture": "群馬県",
+    "party": "公明党",
+    "count": 3,
+    "positions": []
+  },
+  {
+    "prefecture": "群馬県",
+    "party": "日本共産党",
+    "count": 2,
+    "positions": []
+  },
+  {
+    "prefecture": "群馬県",
+    "party": "群馬維新の会",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "群馬県",
+    "party": "無所属",
+    "count": 1,
+    "positions": ["相沢 崇文氏"]
+  },
+  {
+    "prefecture": "群馬県",
+    "party": "空席",
+    "count": 4,
+    "positions": [],
+    "description": "議員定数50人/現員46人"
+  },
+  {
+    "prefecture": "茨城県",
+    "party": "いばらき自民党",
+    "count": 43,
+    "positions": ["議長: 舘静馬氏", "副議長: 下路健次郎氏"],
+    "description": "2025年12月15日現在"
+  },
+  {
+    "prefecture": "茨城県",
+    "party": "公明党",
+    "count": 4,
+    "positions": []
+  },
+  {
+    "prefecture": "茨城県",
+    "party": "国民民主党",
+    "count": 4,
+    "positions": []
+  },
+  {
+    "prefecture": "茨城県",
+    "party": "茨城無所属・政策の会",
+    "count": 4,
+    "positions": [],
+    "description": "立憲民主党所属の玉造順一議員を含む"
+  },
+  {
+    "prefecture": "茨城県",
+    "party": "日本共産党",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "茨城県",
+    "party": "市民ネットワーク",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "茨城県",
+    "party": "日本維新の会",
+    "count": 1,
+    "positions": []
+  },
+  {
+    "prefecture": "茨城県",
+    "party": "無所属",
+    "count": 4,
+    "positions": []
   }
 ]
