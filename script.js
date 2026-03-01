@@ -7,64 +7,103 @@ const svg = d3.select("#map")
   .style("background", "#e8e4da");
 
 // =====================
-// 政党カラー
+// 政党カラー（正規表現パターン）
 // =====================
-const partyColors = {
-  "自由民主党": "#c53a3a",
-  "自民党": "#c53a3a",
-  "立憲民主党": "#4f9ad6",
-  "維新": "#77b255",
-  "日本維新の会": "#77b255",
-  "公明党": "#f1b400",
-  "共産党": "#9b7ac6",
-  "日本共産党": "#9b7ac6",
-  "国民民主党": "#e8a333",
-  "参政党": "#8b4513",
-  "かながわ未来": "#66bb6a",
-  "1人会派": "#999",
-  "自由を守る会": "#7c7c7c",
-  "空席": "#ddd",
-  "無所属": "#999"
-};
+// データ内で党名の表記ゆれが多いため、正規表現を使って
+// カラーと表示名を紐付ける。データは変更せずにこちらで吸収する。
+const partyColorPatterns = [
+  { regex: /(?:自由民主党|自民党|自民)/, color: "#c53a3a", name: "自民党" },
+  { regex: /立憲民主|立憲/, color: "#4f9ad6", name: "立憲民主党" },
+  { regex: /連合/, color: "#2c1aec", name: "立憲民主党" },
+  { regex: /維新/, color: "#77b255", name: "維新" },
+  { regex: /公明/, color: "#f1b400", name: "公明党" },
+  { regex: /共産/, color: "#9b7ac6", name: "日本共産党" },
+  { regex: /国民民主/, color: "#e8a333", name: "国民民主党" },
+  { regex: /参政/, color: "#8b4513", name: "参政党" },
+  { regex: /ファースト/, color: "#66bb6a", name: "都民ファーストの会" },
+  { regex: /1人会派/, color: "#999", name: "1人会派" },
+  { regex: /空席/, color: "#000000", name: "空席" },
+  { regex: /無所属/, color: "#ddd", name: "無所属" }
+];
+
+function normalizePartyName(party) {
+  const entry = partyColorPatterns.find(e => e.regex.test(party));
+  return entry ? entry.name : party;
+}
+
+function getPartyColor(party) {
+  const entry = partyColorPatterns.find(e => e.regex.test(party));
+  return entry ? entry.color : "#999"; // デフォルト灰色
+}
 
 let activeParty = null; // legendクリック状態
 
-// =====================
-// タイル座標（全県分）
-// =====================
 const tile = {
-  "北海道":[9,0],
+  // 北海道・東北（右上エリア）
+  "北海道":  [9, 0],
 
-  "青森県":[8,1],"岩手県":[9,1],"秋田県":[7,1],
-  "宮城県":[9,2],"山形県":[7,2],"福島県":[8,2],
+  "青森県":  [9, 1],
+  "岩手県":  [10, 1],
+  "秋田県":  [8, 1],
 
-  "新潟県":[7,3],"富山県":[6,3],"石川県":[5,3],
-  "福井県":[5,4],"長野県":[7,4],
+  "宮城県":  [10, 2],
+  "山形県":  [8, 2],
+  "福島県":  [9, 2],
 
-  "茨城県":[10,4],"栃木県":[9,4],"群馬県":[8,4],
-  "埼玉県":[9,5],"千葉県":[11,6],
-  "東京都":[10,6],"神奈川県":[9,6],
+  // 関東
+  "茨城県":  [10, 3],
+  "栃木県":  [9, 3],
+  "群馬県":  [8, 3],
+  "新潟県":  [7, 3],
 
-  "岐阜県":[6,5],"静岡県":[8,7],"愛知県":[7,7],
-  "三重県":[6,7],
+  "埼玉県":  [9, 4],
+  "千葉県":  [10, 4],
+  "東京都":  [9, 5],
+  "神奈川県": [9, 6],
 
-  "滋賀県":[5,6],"京都府":[4,6],
-  "大阪府":[5,7],"兵庫県":[4,7],
-  "奈良県":[6,8],"和歌山県":[5,8],
+  // 中部・北陸
+  "富山県":  [7, 4],
+  "石川県":  [6, 3],
+  "福井県":  [6, 4],
+  "長野県":  [8, 4],
+  "山梨県":  [8, 5],
+  "岐阜県":  [7, 5],
+  "静岡県":  [8, 6],
+  "愛知県":  [7, 6],
 
-  "鳥取県":[3,6],"島根県":[2,6],
-  "岡山県":[3,7],"広島県":[2,7],
-  "山口県":[1,8],
+  // 近畿
+  "三重県":  [6, 6],
+  "滋賀県":  [6, 5],
+  "京都府":  [5, 5],
+  "大阪府":  [5, 6],
+  "兵庫県":  [4, 5],
+  "奈良県":  [6, 7],
+  "和歌山県": [5, 7],
 
-  "徳島県":[5,9],"香川県":[4,9],
-  "愛媛県":[3,9],"高知県":[4,10],
+  // 中国
+  "鳥取県":  [3, 4],
+  "島根県":  [2, 4],
+  "岡山県":  [3, 5],
+  "広島県":  [2, 5],
+  "山口県":  [1, 5],
 
-  "福岡県":[3,10],"佐賀県":[2,10],
-  "長崎県":[1,10],"熊本県":[3,11],
-  "大分県":[4,11],
-  "宮崎県":[4,12],"鹿児島県":[3,12],
+  // 四国
+  "徳島県":  [5, 8],
+  "香川県":  [4, 7],
+  "愛媛県":  [3, 7],
+  "高知県":  [4, 8],
 
-  "沖縄県":[2,14]
+  // 九州
+  "福岡県":  [1, 6],
+  "佐賀県":  [0, 6],
+  "長崎県":  [0, 7],
+  "熊本県":  [1, 7],
+  "大分県":  [2, 6],
+  "宮崎県":  [2, 7],
+  "鹿児島県": [1, 8],
+
+  // 沖縄
+  "沖縄県":  [0, 10],
 };
 
 // =====================
@@ -73,11 +112,7 @@ const tile = {
 const cellW = 110;
 const cellH = 90;
 
-// 半円形pie chartの最大半径（cellHから逆算）
-// cellH=90, 余白を考慮して max_radius ≒ 35px
 const maxRadius = 35;
-
-
 // =====================
 // ツールチップ
 // =====================
@@ -94,31 +129,17 @@ const tooltip = d3.select("body")
   .style("z-index", 1000);
 
 // =====================
-// legend描画
+// legend（凡例）要素
 // =====================
+// SVGグループだけ先に作成し、データ読み込み後に中身を生成する。
 const legend = svg.append("g")
   .attr("transform", "translate(50,50)");
 
-const uniqueParties = Array.from(new Set([
-  "自民党", "立憲民主党", "公明党", "日本共産党", "維新",
-  "国民民主党", "参政党", "かながわ未来", "1人会派", "空席"
-]));
+// legend の項目はデータ読み込みの際に動的に決めるため、
+// uniqueParties はその後で設定される。
+let uniqueParties = [];
 
-uniqueParties.forEach((party, i) => {
-  const g = legend.append("g")
-    .attr("transform", `translate(${(i%3)*160}, ${Math.floor(i/3)*30})`)
-    .style("cursor", "pointer")
-    .on("click", () => toggleParty(party));
-
-  g.append("circle")
-    .attr("r", 8)
-    .attr("fill", partyColors[party] || "#999");
-
-  g.append("text")
-    .attr("x", 15)
-    .attr("y", 4)
-    .text(party);
-});
+// toggleParty/updateHighlight は後述の関数利用する
 
 function toggleParty(party) {
   activeParty = activeParty === party ? null : party;
@@ -129,7 +150,8 @@ function updateHighlight() {
   svg.selectAll(".party-slice")
     .attr("opacity", d => {
       if (!activeParty) return 1;
-      return d.data.party === activeParty ? 1 : 0.15;
+      const partyName = normalizePartyName(d.data.party);
+      return partyName === activeParty ? 1 : 0.15;
     });
 }
 
@@ -137,6 +159,26 @@ function updateHighlight() {
 // データ読み込み
 // =====================
 d3.json("data.json").then(data => {
+
+  // 凡例をデータから組み立てる
+  uniqueParties = Array.from(new Set(data.map(d => normalizePartyName(d.party))));
+  // 色が定義されている党のみ残す
+  uniqueParties = uniqueParties.filter(p => getPartyColor(p) !== "#999");
+  uniqueParties.forEach((party, i) => {
+    const g = legend.append("g")
+      .attr("transform", `translate(${(i%3)*160}, ${Math.floor(i/3)*30})`)
+      .style("cursor", "pointer")
+      .on("click", () => toggleParty(party));
+
+    g.append("circle")
+      .attr("r", 8)
+      .attr("fill", getPartyColor(party));
+
+    g.append("text")
+      .attr("x", 15)
+      .attr("y", 4)
+      .text(party);
+  });
 
   // 各県ごとにデータをグループ化
   const grouped = d3.group(data, d => d.prefecture);
@@ -148,15 +190,27 @@ d3.json("data.json").then(data => {
     maxCount = Math.max(maxCount, total);
   });
 
-  // スケール関数（人数 → 半径、平方根で計算）
-  const radiusScale = d3.scaleSqrt()
+  // スケール関数（人数 → 半径、線形で計算して差を強調）
+  const radiusScale = d3.scaleLinear()
     .domain([0, maxCount])
     .range([5, maxRadius]);
 
   // 全県ループ（データ無でも描画）
   Object.keys(tile).forEach(pref => {
 
-    const members = grouped.get(pref) || [];
+    let members = grouped.get(pref) || [];
+    // 表記ゆれを吸収して同党派をまとめる
+    if (members.length > 0) {
+      const agg = new Map();
+      members.forEach(m => {
+        const key = normalizePartyName(m.party);
+        if (!agg.has(key)) {
+          agg.set(key, { party: key, count: 0, positions: m.positions });
+        }
+        agg.get(key).count += m.count;
+      });
+      members = Array.from(agg.values());
+    }
     const totalCount = members.reduce((sum, m) => sum + m.count, 0);
     const radius = radiusScale(totalCount);
 
@@ -221,14 +275,18 @@ d3.json("data.json").then(data => {
       .append("path")
       .attr("class", "party-slice")
       .attr("d", arc)
-      .attr("fill", d => partyColors[d.data.party] || "#ccc")
+      .attr("fill", d => getPartyColor(d.data.party) || "#ccc")
       .attr("stroke", "#fff")
       .attr("stroke-width", 1)
       .attr("opacity", 1)
       .on("mouseover", (event, d) => {
+        let html = `${d.data.party}<br/>${d.data.count}人`;
+        if (d.data.positions && d.data.positions[0]) {
+          html = `<strong>${d.data.positions[0]}</strong><br/>` + html;
+        }
         tooltip
           .style("opacity", 1)
-          .html(`<strong>${d.data.positions[0]}</strong><br/>${d.data.party}<br/>${d.data.count}人`)
+          .html(html)
           .style("left", (event.pageX + 10) + "px")
           .style("top", (event.pageY - 20) + "px");
       })

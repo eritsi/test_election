@@ -621,7 +621,7 @@
     "prefecture": "群馬県",
     "party": "無所属",
     "count": 1,
-    "positions": ["相沢 崇文氏"]
+    "description": "相沢 崇文氏"
   },
   {
     "prefecture": "群馬県",
@@ -715,8 +715,8 @@
     "prefecture": "新潟県",
     "party": "無所属",
     "count": 1,
-    "positions": ["馬場 秀幸氏"],
-    "description": "議員定数53人/現員53人。2023年5月時点名簿および2026年2月活動状況に基づく"
+    "positions": [],
+    "description": "無所属: 馬場 秀幸氏。議員定数53人/現員53人。2023年5月時点名簿および2026年2月活動状況に基づく"
   },
   {
     "prefecture": "富山県",
@@ -811,8 +811,8 @@
     "prefecture": "福井県",
     "party": "無所属・空席",
     "count": 2,
-    "positions": ["無所属: 後藤正邦氏"],
-    "description": "2026年1月の補選で後藤氏当選。福井市選挙区に1人の欠員。定数37人/現員36人"
+    "positions": [],
+    "description": "2026年1月の補選で無所属: 後藤正邦氏当選。福井市選挙区に1人の欠員。定数37人/現員36人"
   },
   {
     "prefecture": "山梨県",
@@ -875,8 +875,8 @@
     "prefecture": "長野県",
     "party": "無所属・空席",
     "count": 3,
-    "positions": ["無所属: 宮澤 敏文氏", "無所属: 小林 君男氏"],
-    "description": "議員定数57人/現員56人/欠員1"
+    "positions": [],
+    "description": "無所属: 宮澤 敏文氏、無所属: 小林 君男氏。議員定数57人/現員56人/欠員1"
   },
   {
     "prefecture": "岐阜県",
@@ -901,28 +901,29 @@
     "prefecture": "岐阜県",
     "party": "日本共産党",
     "count": 1,
-    "positions": ["中川 裕子氏"]
+    "positions": [],
+    "description": "中川 裕子氏"
   },
   {
     "prefecture": "岐阜県",
     "party": "無所属・空席",
     "count": 5,
-    "positions": ["平野 恭子氏", "酒向 薫氏", "木村 千秋氏"],
-    "description": "大垣市(1)および加茂郡(1)に計2人の欠員。定数46人/現員44人"
+    "positions": [],
+    "description": "平野 恭子氏、酒向 薫氏、木村 千秋氏。大垣市(1)および加茂郡(1)に計2人の欠員。定数46人/現員44人"
   },
   {
     "prefecture": "静岡県",
     "party": "自民改革会議",
     "count": 41,
-    "positions": ["代表: 鈴木澄美氏"],
-    "description": "最大会派。2025年2月18日更新情報"
+    "positions": [],
+    "description": "代表: 鈴木澄美氏。最大会派。2025年2月18日更新情報"
   },
   {
     "prefecture": "静岡県",
     "party": "ふじのくに県民クラブ",
     "count": 17,
-    "positions": ["会長: 四本康久氏"],
-    "description": "第2会派。鈴木康友知事の支援母体"
+    "positions": [],
+    "description": "会長: 四本康久氏。第2会派。鈴木康友知事の支援母体"
   },
   {
     "prefecture": "静岡県",
@@ -934,8 +935,8 @@
     "prefecture": "静岡県",
     "party": "無所属",
     "count": 5,
-    "positions": ["遠藤行洋氏", "塚本大氏", "桜井勝郎氏", "大石哲司氏", "山本隆久氏"],
-    "description": "議員定数68人/現員68人。欠員なし"
+    "positions": [],
+    "description": "遠藤行洋氏、塚本大氏、桜井勝郎氏、大石哲司氏、山本隆久氏。議員定数68人/現員68人。欠員なし"
   },
   {
     "prefecture": "愛知県",
@@ -966,8 +967,8 @@
     "prefecture": "愛知県",
     "party": "無所属・空席",
     "count": 16,
-    "positions": ["県政自民クラブ: 筒井タカヤ氏", "日本共産党: 下奥奈歩氏"],
-    "description": "無所属9人（1人会派含む）および欠員7人。定数102人/現員95人"
+    "positions": [],
+    "description": "県政自民クラブ: 筒井タカヤ氏、日本共産党: 下奥奈歩氏。無所属9人（1人会派含む）および欠員7人。定数102人/現員95人"
   },
   {
     "prefecture": "三重県",
@@ -1012,8 +1013,8 @@
     "prefecture": "三重県",
     "party": "参政党",
     "count": 1,
-    "positions": ["難波聖子氏"],
-    "description": "令和7年9月の補欠選挙により新たに加入"
+    "positions": [],
+    "description": "難波聖子氏。令和7年9月の補欠選挙により新たに加入"
   },
   {
     "prefecture": "三重県",
@@ -1063,8 +1064,8 @@
     "prefecture": "滋賀県",
     "party": "無所属",
     "count": 2,
-    "positions": ["森重重則氏を含む"],
-    "description": "定数44人/現員42人。2人の欠員"
+    "positions": [],
+    "description": "無所属：森重重則氏。定数44人/現員42人。2人の欠員"
   },
   {
     "prefecture": "京都府",
@@ -1118,8 +1119,8 @@
     "prefecture": "大阪府",
     "party": "大阪維新の会大阪府議会議員団",
     "count": 52,
-    "positions": ["代表: 河崎大樹氏", "幹事長: 角谷庄一氏", "政務調査会長: 前田洋輔氏"],
-    "description": "令和8年2月10日現在。補選で当選した土井一慶氏が加入"
+    "positions": [],
+    "description": "代表: 河崎大樹氏、幹事長: 角谷庄一氏、政務調査会長: 前田洋輔氏。令和8年2月10日現在。補選で当選した土井一慶氏が加入"
   },
   {
     "prefecture": "大阪府",
@@ -1252,8 +1253,8 @@
     "prefecture": "和歌山県",
     "party": "会派に属さない議員",
     "count": 1,
-    "positions": ["谷 洋一氏"],
-    "description": "定数42人/現員39人。3人の欠員。2026年3月に補選予定"
+    "positions": [],
+    "description": "谷 洋一氏。定数42人/現員39人。3人の欠員。2026年3月に補選予定"
   },
   {
     "prefecture": "鳥取県",
@@ -1320,8 +1321,8 @@
     "prefecture": "島根県",
     "party": "無所属",
     "count": 1,
-    "positions": ["成相 安信氏"],
-    "description": "議員定数36人/現員35人/欠員1"
+    "positions": [],
+    "description": "成相 安信氏。議員定数36人/現員35人/欠員1"
   },
   {
     "prefecture": "岡山県",
@@ -1355,8 +1356,8 @@
     "prefecture": "岡山県",
     "party": "無所属",
     "count": 2,
-    "positions": ["蜂谷 弘美氏", "佐古 一太氏"],
-    "description": "議員定数55人/現員54人/欠員1"
+    "positions": [],
+    "description": "蜂谷 弘美氏、佐古 一太氏。議員定数55人/現員54人/欠員1"
   },
   {
     "prefecture": "広島県",
@@ -1655,7 +1656,7 @@
     "prefecture": "愛媛県",
     "party": "無所属",
     "count": 4,
-    "positions": ["井川剛氏", "菊池伸英氏", "中野泰誠氏", "西岡新氏"]
+    "description": "井川剛氏、菊池伸英氏、中野泰誠氏、西岡新氏"
   },
   {
     "prefecture": "愛媛県",
@@ -1695,20 +1696,20 @@
     "prefecture": "高知県",
     "party": "南風",
     "count": 1,
-    "positions": ["清藤真司氏"]
+    "description": "清藤真司氏"
   },
   {
     "prefecture": "高知県",
     "party": "県政会",
     "count": 1,
-    "positions": ["上田周五氏"]
+    "description": "上田周五氏"
   },
   {
     "prefecture": "高知県",
     "party": "未定（無所属）",
     "count": 1,
-    "positions": ["岡﨑哲也氏"],
-    "description": "2026年1月の土佐清水市補選で当選"
+    "positions": [],
+    "description": "岡﨑哲也氏。2026年1月の土佐清水市補選で当選"
   },
   {
     "prefecture": "福岡県",
@@ -1793,8 +1794,8 @@
     "prefecture": "長崎県",
     "party": "自由民主党",
     "count": 30,
-    "positions": ["予算決算委員会委員長: 前田 哲也氏", "議会運営委員会委員長: 宅島 寿一氏"],
-    "description": "最大会派。令和8年2月13日現在。補選当選の永安氏が加入"
+    "positions": [],
+    "description": "予算決算委員会委員長: 前田 哲也氏、議会運営委員会委員長: 宅島 寿一氏。最大会派。令和8年2月13日現在。補選当選の永安氏が加入"
   },
   {
     "prefecture": "長崎県",
